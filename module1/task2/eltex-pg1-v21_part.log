@@ -1,0 +1,12 @@
+eltex-pg1-v21@eltex:~$ echo $HISTFILESIZE
+echo $HISTFILESIZE
+ls .*
+HISTTIMEFORMAT='%F %T'
+export PROMPT_COMMAND='history -a'
+DATE=(date +"%F")
+TIME=(date +"%T")
+DATE_TIME=("$DATE $TIME")
+find /bin/ /sbin/ -name '*[0-9]*'
+export PS1='$USER''@'"$HOSTNAME"'-'"$(date +%H:%M)>"
+PROMPT_COMMAND='PS1="${USER}@${HOSTNAME}-$(date +%H:%M)>"'
+mkdir -p ~/$(date +"%Y")-{01..12}

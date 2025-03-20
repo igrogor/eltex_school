@@ -1,0 +1,11 @@
+mkdir -p D1/D2/D3
+touch file.txt
+ln ../file.txt newfile.txt
+ln -s ../file.txt newfile_s.txt
+mv file.txt ..
+rm -r D2
+find / -type f -size +50M >> ${USER}_part3_gt50M.log 2>/dev/null
+find . -type f -mtime -1
+which find
+file /usr/bin/find
+file /boot/initrd.img*.
