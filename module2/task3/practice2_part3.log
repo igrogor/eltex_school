@@ -1,0 +1,99 @@
+git config --global user.name "igrogor"
+git config --global user.email  "eg.terentjev2016@yandex.ru"
+git config --global init.defaultBranch main
+apt update
+apt install git gh
+ssh-keygen -t ed25519 -f ~/.ssh/igrogor
+
+#Generating public/private ed25519 key pair.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Passphrases do not match.  Try again.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /root/.ssh/igrogor
+Your public key has been saved in /root/.ssh/igrogor.pub
+The key fingerprint is:
+SHA256:aPFqY71RnEe8Ch65bNlLCPjlpRcNtrqDPbnKwSxpnaQ root@eltex-practice2-pg1-v21
+The key's randomart image is:
++--[ED25519 256]--+
+|                 |
+|           .     |
+|      .   o o    |
+|     . + + * .   |
+|    . = S B +    |
+|     X X % +     |
+|    E %o&.=      |
+|   . =.+=* .     |
+|      o.++.      |
++----[SHA256]-----+
+#
+
+gh auth login
+
+#
+? What account do you want to log into? GitHub.com
+? What is your preferred protocol for Git operations on this host? SSH
+? Upload your SSH public key to your GitHub account? /root/.ssh/igrogor.pub
+? Title for your SSH key:  eltex-practice2-pg1-v21
+? How would you like to authenticate GitHub CLI? Login with a web browser
+
+! First copy your one-time code: 5753-1DD7
+Press Enter to open github.com in your browser...
+! Failed opening a web browser at https://github.com/login/device
+  exec: "xdg-open,x-www-browser,www-browser,wslview": executable file not found in $PATH
+  Please try entering the URL in your browser manually
+✓ Authentication complete.
+- gh config set -h github.com git_protocol ssh
+✓ Configured git protocol
+! Authentication credentials saved in plain text
+✓ Uploaded the SSH key to your GitHub account: /root/.ssh/igrogor.pub
+✓ Logged in as igrogor
+#
+
+gh auth setup-git --hostname github.com
+
+gh auth status
+
+#github.com
+  ✓ Logged in to github.com account igrogor (/root/.config/gh/hosts.yml)
+  - Active account: true
+  - Git operations protocol: ssh
+  - Token: gho_************************************
+  - Token scopes: 'admin:public_key', 'gist', 'read:org', 'repo'
+#
+
+gh repo create --public eltex_school
+#✓ Created repository igrogor/eltex_school on GitHub
+  https://github.com/igrogor/eltex_school
+
+mkdir ~/eltex_school && cd ~/eltex_school
+echo "# Первая практика первого модуля" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/igrogor/eltex_school.git
+git status
+git push -u origin main
+mkdir -p module1/task{1..3}
+scp -P 22 eltex-pg1-v21_part.log root@172.16.9.195:/root/eltex_school/module1/task2
+#eltex-pg1-v21_part.log                                                                                          100%  367     1.2MB/s   00:00
+scp -P 22 eltex-pg1-v21_part3.log eltex-pg1-v21_part3_gt50M.log  root@172.16.9.195:/root/eltex_school/module1/task3
+#eltex-pg1-v21_part3.log                                                                                         100%  260   553.3KB/s   00:00
+#eltex-pg1-v21_part3_gt50M.log                                                                                   100%   55   197.4KB/s   00:00
+scp -P 22 report_part1.txt root@172.16.9.195:/root/eltex_school/module1/task1
+#report_part1.txt                                                                                                100%  120   212.2KB/s   00:00
+git add .
+git status
+git commit -"Практика 1"
+git push
+mkdir ~/eltex_school_clone && cd ~/eltex_school_clone
+git clone https://github.com/igrogor/eltex_school.git .
+git add .
+git commit -m""
+git push
+git fetch 
+git log origin/main
+git diff main origin/main
+git merge

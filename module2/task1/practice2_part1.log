@@ -1,0 +1,87 @@
+ssh-keygen
+ssh-copy-id root@172.16.9.195
+cat .ssh/*.pub
+#
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQClR4unVxvUpZ+9B3of04SKCkg7mrNWicMrwPoAprzRGF+bx7Uqr0bl5dxxEFvSiaha6DthHHDznjZRxz
+qPU78fAwYzskDg5irPWVJGfEQCZnWY+2HFpCN0BZ4wRtwXgwZ3Y0qFNxT9AhizrrAdFWDg+nN2oVYBamI5YCpY1eYUTr7Ygl/4Z15Myz44ioUxmDfjj3pC
+tPXdHB9jTAqnxWILepbF5ixpZ4g+9yalbkpvsEQxElaDtpQCF994Xepud3KZQH6nMZSj+dZN/KPukSBfP+Hn0g6HZH5DjDHacXrlNYUyhoNkp1k17w7T25
+pUfwE1IWlOIvX6obpGiMh/f3SZhLbd8WBQvjwiil8B7D9KLdscJvWnQJ+sGGS5SFlAid+Z1GP5D1C05yJ9YnTF903Jylj4TuXIDmDz+L4U4/sHKU0zMZVd
+6kVTVe3XB7Fmz9uI/8ZTE360/A9rREASrqd8wfLRk70hKb9wHoZxlx0vavLqs7kjgLfkWTY80P9w7us= eltex-pg1-v21@eltex
+#
+cat /.ssh/authorized_keys
+
+#
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQClR4unVxvUpZ+9B3of04SKCkg7mrNWicMrwPoAprzRGF+bx7Uqr0bl5dxxEFvSiaha6DthHHDznj ZRxz
+qPU78fAwYzskDg5irPWVJGfEQCZnWY+2HFpCN0BZ4wRtwXgwZ3Y0qFNxT9AhizrrAdFWDg+nN2oVYBamI5YCpY1eYUTr7Ygl/4Z15Myz44ioUxmDfjj3pC
+tPXdHB9jTAqnxWILepbF5ixpZ4g+9yalbkpvsEQxElaDtpQCF994Xepud3KZQH6nMZSj+dZN/KPukSBfP+Hn0g6HZH5DjDHacXrlNYUyhoNkp1k17w7T25
+pUfwElIWl0IvX6obpGiMh/f3SZhLbd8WBQvjwiil8B7D9KLdscJvWnQJ+sGGS5SFlAid+Z1GP5D1C05yJ9YnTF903Jylj4TuXIDmDz+L4U4/sHKU0zMZVd
+6kVTVe3XB7Fmz9uI/8ZTE360/A9rREASrqd8wfLRk70hKb9wHoZxlx0vavLqs7kjgLfkWTY80P9w7us= eltex-pg1-v21@eltex
+#
+ls -la /.ssh/authorized_keys
+#-rw ------- 1 root root 573 Mar 13 11:22 authorized_keys
+ls -la .ssh/*.pub
+#-rw-r -- r -- 1 eltex-pq1-v21 eltex-pq1-v21 573 Mar 13 18:15 .ssh/id rsa.pub
+useradd user1 -m -s /bin/bash
+passwd max
+adduser user2
+adduser user3
+usermod -s /usr/sbin/nologin user3
+groupadd NICK
+usermod -aG NICK user{1..3}
+cat /etc/group | grep user
+#
+#users : x : 100 : user2, user3
+#user1:x : 1001 :
+#user2:x : 1002 :
+#user3:x : 1003:
+#NICK:x: 1004: userl, user2, user3
+#
+mkdir /opt/share
+chown :NICK /opt/share
+chmod g+s /opt/share
+chmod g+rwx /opt/share
+
+Изменил значение umask на 004
+После создания файла каждым из пользователей, вышло удалить файлы от чужого пользователя
+
+#
+usersgeltex-practicez-pgi-vzl:/opt/shares ls
+fileUl.txt fileU2.txt fileU3.txt
+user3@eltex-practice2-pg1-v21:/opt/share$ rm fileUl.txt
+user3@eltex-practice2-pg1-v21:/opt/share$ ls
+fileU2.txt fileU3.txt
+user3@eltex-practice2-pg1-v21:/opt/share$ cd ..
+user3@eltex-practice2-pg1-v21:/opt$ cd share/
+user3@eltex-practice2-pg1-v21:/opt/share$ rm fileU*
+user3@eltex-practice2-pg1-v21:/opt/share$ ls
+#
+
+chmod +t /opt/share
+После установки  sticky bit на каталоге /opt/share не получаеться удалить чужие файлы
+#user3@eltex-practice2-pg1-v21:/opt/share$ rm fileU1.txt
+#rm: cannot remove 'fileUl. txt': Operation not permitted
+
+пункт 13 пропущен,т.к даже с установленным флагом SUID не разрещает выполнить скрипт.
+chage -M 10 user1
+chage -M 10 user2
+chage -M 10 user3
+echo 'Егор Терентьев' > /etc/motd
+rsync -av /etc /root/etc_backup
+tar -czvf etc_backup.tar.gz /root/etc_backup
+tar -cjvf etc_backup_bzip2.tar.bz2 /root/etc_backup
+apt install 7zip
+7z a etc_backup_7zip.tar.7z /root/etc_backup
+ sudo apt-get install bzip2
+-rw-r--r-- 1 root root 4.5M Mar 20 06:59 etc_backup_7zip.tar.7z
+-rw-r--r-- 1 root root 553K Mar 20 07:11 etc_backup_bzip2.tar.bz2
+-rw-r--r-- 1 root root 581K Mar 20 06:47 etc_backup.tar.gz
+echo "$(date)" >> /etc/motd
+sudo rsync -avz /etc/ /root/etc_backup/
+tar -czvf etc_backup.tar.gz /root/etc_backup/etc/motd
+tar -xvjf etc_backup_bzip2.tar.bz2 -C /root/etc_backup_original
+diff -rq /root/etc_backup /root/etc_backup_original/root/etc_backup
+
+tar -xvzf etc_backup.tar.gz -C /root/etc_backup_gzip
+7z x etc_backup_7zip.tar.7z -o/root/etc_backup_7zip
+diff /root/etc_backup_gzip/root/etc_backup/etc/motd /root/etc_backup_7zip/etc_backup/etc/motd
+#файлы 1:1
