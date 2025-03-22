@@ -1,0 +1,28 @@
+ps -eLf | awk {print } | uniq -c | awk  {print -bash}
+# 
+     7 357
+      2 677
+      4 693
+      2 694
+      6 710
+      4 714
+      2 737
+      4 758
+      6 1084
+      4 1091
+#
+top
+passwd
+kill -15 -13961
+kill -2 -13961
+kill -3 -13961
+kill -9 -13961
+vim ~/file_task3.txt
+sleep 600
+jobs
+bg %2
+jobs -l
+ps -o pid,ni,cmd
+fg %1
+kill -15 14042
+trap echo Меня голыми руками не возьмёшь! SIGINT SIGQUIT
