@@ -2,14 +2,16 @@
 #define HEADER_H_
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdarg.h>
+
 
 void menu();
 
-int addition(int arg1, int arg2);
+int addition(int size, ...);
 
-int subtraction(int arg1, int arg2);
+int subtraction(int size, ...);
 
-int multiplication(int arg1, int arg2);
+int multiplication(int size, ...);
 
-float division(int arg1, int arg2);
+float division(int size, ...);
 #endif
