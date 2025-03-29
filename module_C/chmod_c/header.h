@@ -17,24 +17,26 @@ typedef struct Directory
 typedef struct Node
 {
     Directory value;
-    struct Node* next;
-    struct Node* prev;
+    struct Node *next;
+    struct Node *prev;
 } Node;
 
 typedef struct List
 {
-    struct Node* head;
-    struct Node* tail;
+    struct Node *head;
+    struct Node *tail;
 } List;
 
-void printList(Node* head);
-void AddinHead(Node** head,  Directory* temp);
-Node* NewNode(Directory* temp);
-
-void add_person(Directory *list, int *cur_size, Directory *temp);
-void edit_user(int ID, Directory *list, Directory *temp, int *cur_size);
-void print_sctuct(Directory *list, int cur_size);
-void menu(Directory *list, int *cur_size);
-void del(int ID, int *cur_size, Directory *list);
+void PrintList(Node *head);
+void AddinHead(Node **head, Directory *temp);
+Node *NewNode(Directory *temp);
+void AddinSort(Node **head, Directory *temp);
+void AddinTail(Node **head, Directory *temp);
+void DeleteNode(Node **head, int ID);
+void EditNode(Node **head, Directory *temp, int ID);
+void Print_one_person(Directory list);
+Directory* InputPerson();
+Directory *InputPersonIsNotId();
+void Menu(Node **head);
 
 #endif

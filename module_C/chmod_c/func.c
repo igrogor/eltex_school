@@ -3,17 +3,20 @@
 #include <stdlib.h>
 #include <string.h>
 
-Node* NewNode(Directory* temp) {
-    Node* node = (Node*)malloc(sizeof(Node));
+Node *NewNode(Directory *temp)
+{
+    Node *node = (Node *)malloc(sizeof(Node));
     node->value = *temp;
     node->next = NULL;
     node->prev = NULL;
     return node;
 }
 
-void AddinHead(Node** head,  Directory* temp) {
-    Node* node = NewNode(temp);
-    if(*head == NULL) {
+void AddinHead(Node **head, Directory *temp)
+{
+    Node *node = NewNode(temp);
+    if (*head == NULL)
+    {
         *head = node;
         return;
     }
@@ -22,145 +25,177 @@ void AddinHead(Node** head,  Directory* temp) {
     (*head) = node;
 }
 
-void printList(Node* head) {
+void AddinTail(Node **head, Directory *temp)
+{
+    Node *node = NewNode(temp);
+
+    if (*head == NULL)
+    {
+        *head = node;
+        return;
+    }
+
+    Node *current = *head;
+    while (current->next != NULL)
+    {
+        current = current->next;
+    }
+    current->next = node;
+    node->prev = current;
+}
+
+void PrintList(Node *head)
+{
+    printf("id\tday\tmonth\tyear\tname\tlast_name\n");
 
     while (head != NULL)
     {
-        printf("%d\n", head->value.id);
+        Print_one_person(head->value);
         head = head->next;
     }
-    
+    printf("\n");
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-void print_sctuct(Directory *list, int cur_size)
+void AddinSort(Node **head, Directory *temp)
 {
-    printf("#######################################################################################\n");
-    printf("id\tday\tmonth\tyear\tname\tlast_name\n");
-    for (int i = 0; i < cur_size; i++)
+    if (temp->id < 0)
     {
-        printf("%d\t%d\t%d\t%d\t%s\t%s\n", list[i].id, list[i].date.day, list[i].date.month, list[i].date.year, list[i].name, list[i].last_name);
+        printf("Error!\n");
+        return;
     }
-    printf("#######################################################################################\n");
+    Node *node = NewNode(temp);
+    if (*head == NULL)
+    {
+        *head = node;
+        return;
+    }
+    if (temp->id == 0)
+    {
+        AddinTail(head, temp);
+    }
+    else
+    {
+        if (node->value.id > (*head)->value.id)
+        {
+            node->next = *head;
+            (*head)->prev = node;
+            (*head) = node;
+        }
+        else
+        {
+            Node *current = (*head);
+            while (node->value.id < current->next->value.id)
+            {
+                current = current->next;
+            }
+            node->next = current->next;
+            if (current->next != NULL)
+                current->next->prev = node;
+            node->prev = current;
+            current->next = node;
+        }
+    }
 }
 
-void menu(Directory *list, int *cur_size)
+void DeleteNode(Node **head, int ID)
 {
-    int flag = 0;
-    while (flag != 5)
+    if (*head == NULL)
     {
-        printf("1 : add person\n2 : edit person\n3 : print add person\n4 : delete\n5 : exit\n");
-        printf("size %d\n", *cur_size);
+        printf("Error\n");
+        return;
+    }
+    Node *tmp = *head;
+    if ((*head)->value.id == ID)
+    {
+        (*head) = (*head)->next;
+        free(tmp);
+    }
+    else
+    {
+        while (ID != tmp->value.id)
+        {
+            tmp = tmp->next;
+        }
+        tmp->prev->next = tmp->next;
+        if (tmp->next != NULL)
+            tmp->next->prev = tmp->prev;
+        free(tmp);
+    }
+}
+
+void EditNode(Node **head, Directory *temp, int ID)
+{
+    if (*head == NULL)
+    {
+        printf("Error\n");
+        return;
+    }
+    Node *current = *head;
+    while (current->value.id != ID)
+    {
+        current = current->next;
+    }
+    strcpy(current->value.name, temp->name);
+    strcpy(current->value.last_name, temp->last_name);
+    current->value.date = temp->date;
+}
+
+void Print_one_person(Directory list)
+{
+    printf("%d\t%d\t%d\t%d\t%s\t%s\n", list.id, list.date.day, list.date.month, list.date.year, list.name, list.last_name);
+}
+
+void Menu(Node **head)
+{
+    while (1)
+    {
+        printf("input options:\n");
+        printf("1-add person\n2-delete person\n3-edit person\n4-print list\n>>");
+        int flag = 0;
         scanf("%d", &flag);
         switch (flag)
         {
         case 1:
-            Directory *temp = malloc(sizeof(Directory));
-            printf("id\tday\tmonth\tyear\tname\tlast name\n");
-
-            scanf("%d %d %d %d %s %s", &temp->id, &temp->date.day, &temp->date.month, &temp->date.year, temp->name, temp->last_name);
-            add_person(list, cur_size, temp);
-            free(temp);
-            break;
-        case 2:
-            printf("input ID user\n");
-            int ID1;
-            scanf("%d", &ID1);
-            Directory *temp1 = malloc(sizeof(Directory));
-            printf("id\tday\tmonth\tyear\tname\tlast name\n");
-            scanf("%d%d %d %d %s %s", &temp1->id, &temp1->date.day, &temp1->date.month, &temp1->date.year, temp1->name, temp1->last_name);
-            edit_user(ID1, list, temp1, cur_size);
+            Directory *temp1 = InputPerson();
+            AddinSort(head, temp1);
             free(temp1);
             break;
+        case 2:
+            printf("input ID:\n");
+            int ID1;
+            scanf("%d", &ID1);
+            DeleteNode(head, ID1);
+            break;
         case 3:
-            print_sctuct(list, *cur_size);
+            printf("input ID:\n");
+            int ID2;
+            scanf("%d", &ID2);
+            Directory *temp = InputPersonIsNotId();
+            EditNode(head, temp, ID2);
+            free(temp);
             break;
         case 4:
-            printf("input ID user\n");
-            int ID;
-            scanf("%d", &ID);
-            del(ID, cur_size, list);
-            break;
-        case 5:
+            PrintList(*head);
             break;
         default:
-            printf("error\n");
+            printf("Error input");
             break;
         }
     }
 }
 
-void add_person(Directory *list, int *cur_size, Directory *temp)
+Directory *InputPerson()
 {
-    list[*cur_size].id = temp->id;
-    list[*cur_size].date.day = temp->date.day;
-    list[*cur_size].date.month = temp->date.month;
-    list[*cur_size].date.year = temp->date.year;
-    strcpy(list[*cur_size].name, temp->name);
-    strcpy(list[*cur_size].last_name, temp->last_name);
-
-    (*cur_size)++;
+    Directory *temp = (Directory *)malloc(sizeof(Directory));
+    printf("input: ID\tName\tLast Name\tDay\tMonth\tYear\n");
+    scanf("%d %s %s %d %d %d", &temp->id, temp->name, temp->last_name, &temp->date.day, &temp->date.month, &temp->date.year);
+    return temp;
 }
 
-void del(int ID, int *cur_size, Directory *list)
+Directory *InputPersonIsNotId()
 {
-
-    int pos = 0;
-    for (size_t i = 0; i < *cur_size; i++)
-    {
-        if (list[i].id == ID)
-        {
-            break;
-        }
-        pos++;
-    }
-
-    for (size_t i = pos; i < *cur_size - 1; i++)
-    {
-        list[i] = list[i + 1];
-    }
-    list[*cur_size - 1].id = 0;
-    list[*cur_size - 1].date.day = 0;
-    list[*cur_size - 1].date.month = 0;
-    list[*cur_size - 1].date.year = 0;
-    memset(list[*cur_size - 1].name, 0, sizeof(list[*cur_size - 1].name));
-    memset(list[*cur_size - 1].last_name, 0, sizeof(list[*cur_size - 1].last_name));
-
-    (*cur_size)--;
-}
-
-void edit_user(int ID1, Directory *list, Directory *temp, int *cur_size)
-{
-    int pos = 0;
-    for (size_t i = 0; i < *cur_size; i++)
-    {
-        if (list[i].id == ID1)
-        {
-            break;
-        }
-        pos++;
-    }
-
-    list[pos].id = temp->id;
-    list[pos].date.day = temp->date.day;
-    list[pos].date.month = temp->date.month;
-    list[pos].date.year = temp->date.year;
-    strcpy(list[pos].name, temp->name);
-    strcpy(list[pos].last_name, temp->last_name);
+    Directory *temp = (Directory *)malloc(sizeof(Directory));
+    printf("input:\tName\tLast Name\tDay\tMonth\tYear\n");
+    scanf("%s %s %d %d %d", temp->name, temp->last_name, &temp->date.day, &temp->date.month, &temp->date.year);
+    return temp;
 }
