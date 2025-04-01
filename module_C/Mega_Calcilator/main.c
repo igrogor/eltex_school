@@ -9,13 +9,13 @@ int main()
 
 void menu()
 {
-    
+
     Func operations[4] = {{"addition", addition}, {"subtraction", subtraction}, {"multiplication", multiplication}, {"division", division}};
 
     while (1)
     {
         int flag, agr1, arg2;
-        for (size_t i = 0; i < sizeof(operations)/sizeof(operations[0]); i++)
+        for (size_t i = 0; i < sizeof(operations) / sizeof(operations[0]); i++)
         {
             printf("%d - %s\n", i, operations[i]);
         }
@@ -23,7 +23,6 @@ void menu()
         printf("input 2 arg\n");
         scanf(" %d %d", &agr1, &arg2);
         printf("%d\n", operations[flag].function(agr1, arg2));
-        
     }
 }
 

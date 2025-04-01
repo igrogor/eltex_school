@@ -198,4 +198,4 @@ Directory *InputPersonIsNotId()
     printf("input:\tName\tLast Name\tDay\tMonth\tYear\n");
     scanf("%s %s %d %d %d", temp->name, temp->last_name, &temp->date.day, &temp->date.month, &temp->date.year);
     return temp;
-}
+} 
