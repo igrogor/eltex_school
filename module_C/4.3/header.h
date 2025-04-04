@@ -20,10 +20,21 @@ typedef struct Directory
 
 typedef struct btree
 {
-    Directory* valuel;
+    Directory value;
     struct btree *left;
     struct btree *right;
 } btree;
 
+btree *NewNode(Directory *temp);
+void AddinBtree(btree **head, Directory *temp);
+void Print_Btree(btree *p);
+void DelNode(btree **head, int ID);
+void PrintTree (btree *pNode);
+void Print_one_person(Directory list);
+Directory* InputPerson();
+Directory *InputPersonIsNotId();
+void Menu(btree **head);
+btree *FindMaxinLeft(btree *head);
+void Print_Btree(btree *p);
 
 #endif
