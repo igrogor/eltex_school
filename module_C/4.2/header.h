@@ -5,7 +5,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-
 typedef struct Message
 {
     int priority;
@@ -15,18 +14,17 @@ typedef struct Message
 typedef struct queue
 {
     Message Message;
-    struct queue* next;
+    struct queue *next;
 } queue;
 
 queue *Newqueue(int priority, char *messege);
-void enqueue(queue** head, Message Message);
-void dequeue(queue** head, int priority);
-void printqueue(queue* head);
-void free_queue(queue* head);
-void generate_messages(queue** head, int count);
-
-
-
+void enqueue(queue **head, Message Message);
+void dequeue(queue **head, int priority);
+void printqueue(queue *head);
+void free_queue(queue **head);
+void generate_messages(queue **head, int count);
+Message getMessage(queue *head);
+void menu(queue **head);
+void dequeue_f(queue **head);
+void dequeue_b(queue **head, int priority);
 #endif
-
-

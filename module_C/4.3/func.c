@@ -189,3 +189,4 @@ Directory *InputPersonIsNotId()
     scanf("%s %s %d %d %d", temp->name, temp->last_name, &temp->date.day, &temp->date.month, &temp->date.year);
     return temp;
 }
+
