@@ -41,10 +41,5 @@ int main(int argc, char *argv[])
         printf("PID = %d, length = %d, square = %d\n", getpid(), num, num * num);
     }
 
-    if (pid != 0)
-    {
-        wait(NULL);
-    }
-
     return 0;
 }

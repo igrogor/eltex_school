@@ -1,11 +1,12 @@
 all:
-	gcc -Wall -Wextra main.c -o interpreter
+	gcc main.c -o interpreter
 
 sum:
-	gcc -Wall -Wextra sum.c -o sum
+	gcc sum.c -o sum
 
 str:
-	gcc -Wall -Wextra str.c -o str
+	gcc str.c -o str
 
 
 clean:
+	rm ./sum ./str ./interpreter
