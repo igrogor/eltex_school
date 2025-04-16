@@ -3,7 +3,6 @@
 #include <unistd.h>
 #include <sys/wait.h>
 #include "header.h"
-#include <stdio.h>
 #include <string.h>
 
 /*
