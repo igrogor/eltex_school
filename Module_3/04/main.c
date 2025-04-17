@@ -56,7 +56,6 @@ int main(int argc, char *argv[])
                 exit(EXIT_FAILURE);
             printf("%d\n", num);
         }
-        
         close(file);
         close(pipefd[0]);
         wait(NULL);
