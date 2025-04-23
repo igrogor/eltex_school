@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 #include "header.h"
 
 int main()
@@ -9,8 +10,10 @@ int main()
 
 void menu()
 {
-
-    Func operations[4] = {{"addition", addition}, {"subtraction", subtraction}, {"multiplication", multiplication}, {"division", division}};
+    Func operations[4] = {{"addition", addition},
+                          {"subtraction", subtraction},
+                          {"multiplication", multiplication},
+                          {"division", division}};
 
     while (1)
     {

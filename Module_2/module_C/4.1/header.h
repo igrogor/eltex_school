@@ -35,7 +35,7 @@ void AddinTail(Node **head, Directory *temp);
 void DeleteNode(Node **head, int ID);
 void EditNode(Node **head, Directory *temp, int ID);
 void Print_one_person(Directory list);
-Directory* InputPerson();
+Directory *InputPerson();
 Directory *InputPersonIsNotId();
 void Menu(Node **head);
 

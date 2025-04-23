@@ -1,10 +1,10 @@
-#include "header.h"
 #include <stdio.h>
 #include <string.h>
 
+#include "header.h"
+
 int main()
 {
-
     queue* head = NULL;
     generate_messages(&head, 2000);
 
@@ -13,5 +13,3 @@ int main()
     printqueue(head);
     return 0;
 }
-
-

@@ -4,8 +4,7 @@
 
 int main(int argc, char *argv[])
 {
-    if (argc == 0)
-        exit(1);
+    if (argc == 0) exit(1);
     for (int i = 2; i != argc; i++)
     {
         strcat(argv[1], argv[i]);

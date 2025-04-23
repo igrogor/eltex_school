@@ -5,8 +5,8 @@
 
 struct Func
 {
-   char *name_func;
-   int (*function)(int a, int b);
+    char *name_func;
+    int (*function)(int a, int b);
 } typedef Func;
 
 void menu();

@@ -5,11 +5,10 @@
 #include <stdlib.h>
 #include <string.h>
 
-
 typedef struct Message
 {
     int priority;
-    char *string;
+    char* string;
 } Message;
 
 typedef struct queue
@@ -18,15 +17,11 @@ typedef struct queue
     struct queue* next;
 } queue;
 
-queue *Newqueue(int priority, char *messege);
+queue* Newqueue(int priority, char* messege);
 void enqueue(queue** head, Message Message);
 void dequeue(queue** head, int priority);
 void printqueue(queue* head);
 void free_queue(queue* head);
 void generate_messages(queue** head, int count);
 
-
-
 #endif
-
-

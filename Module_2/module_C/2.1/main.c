@@ -1,6 +1,7 @@
-#include "header.h"
 #include <stdio.h>
 #include <string.h>
+
+#include "header.h"
 
 int main()
 {
@@ -38,7 +39,6 @@ int main()
     strncpy(list[cur_size].name, "stf", 20);
     strncpy(list[cur_size].last_name, "dfv", 20);
     cur_size++;
-
 
     list[cur_size].id = 3;
     list[cur_size].date.day = 2;

@@ -1,6 +1,7 @@
-#include "header.h"
 #include <stdio.h>
 #include <stdlib.h>
+
+#include "header.h"
 
 queue *Newqueue(int priority, char *message)
 {
@@ -43,25 +44,26 @@ void enqueue(queue **head, Message Message)
     }
 }
 
-
 void printqueue(queue *head)
 {
     queue *current = head;
     while (current != NULL)
     {
-        printf("Priority: %d, Message: %s\n", current->Message.priority, current->Message.string);
+        printf("Priority: %d, Message: %s\n",
+               current->Message.priority,
+               current->Message.string);
         current = current->next;
     }
 }
 
 void generate_messages(queue **head, int count)
 {
-    for (int i = 0; i < count; i++) {
+    for (int i = 0; i < count; i++)
+    {
         char buffer[50];
         snprintf(buffer, sizeof(buffer), "message #%d", i);
         Message Message = {rand() % 256, buffer};
         printf(" %d: %s\n", Message.priority, Message.string);
         enqueue(head, Message);
     }
-
 }

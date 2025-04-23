@@ -1,5 +1,6 @@
-#include "header.h"
 #include <stdio.h>
+
+#include "header.h"
 
 btree *NewNode(Directory *temp)
 {
@@ -78,7 +79,6 @@ void EditNode(btree **head, int ID, Directory *temp)
     }
     if ((*head)->value.id == ID)
     {
-
         (*head)->value = *temp;
     }
     else
@@ -96,8 +96,7 @@ void EditNode(btree **head, int ID, Directory *temp)
 
 void Print_Btree(btree *p)
 {
-    if (p == NULL)
-        return;
+    if (p == NULL) return;
     Print_Btree(p->left);
     printf("%d\t", p->value.id);
 
@@ -108,13 +107,11 @@ void Print_Btree(btree *p)
 
 void PrintTreeRecursive(btree *node, int level)
 {
-    if (node == NULL)
-        return;
+    if (node == NULL) return;
 
     PrintTreeRecursive(node->right, level + 1);
 
-    for (int i = 0; i < level; i++)
-        printf("   ");
+    for (int i = 0; i < level; i++) printf("   ");
 
     printf("%d\n", node->value.id);
 
@@ -128,10 +125,15 @@ void PrintTree(btree *root)
     printf("\n");
 }
 
-
 void Print_one_person(Directory list)
 {
-    printf("%d\t%d\t%d\t%d\t%s\t%s", list.id, list.date.day, list.date.month, list.date.year, list.name, list.last_name);
+    printf("%d\t%d\t%d\t%d\t%s\t%s",
+           list.id,
+           list.date.day,
+           list.date.month,
+           list.date.year,
+           list.name,
+           list.last_name);
 }
 
 void Menu(btree **head)
@@ -139,37 +141,38 @@ void Menu(btree **head)
     while (1)
     {
         printf("input options:\n");
-        printf("1-add person\n2-delete person\n3-edit person\n4-print list\n>>");
+        printf(
+            "1-add person\n2-delete person\n3-edit person\n4-print list\n>>");
         int flag = 0;
         scanf("%d", &flag);
         switch (flag)
         {
-        case 1:
-            Directory *temp1 = InputPerson();
-            AddinBtree(head, temp1);
-            free(temp1);
-            break;
-        case 2:
-            printf("input ID:\n");
-            int ID1;
-            scanf("%d", &ID1);
-            DelNode(head, ID1);
-            break;
-        case 3:
-            printf("input ID:\n");
-            int ID2;
-            scanf("%d", &ID2);
-            Directory *temp = InputPersonIsNotId();
-            temp->id = ID2;
-            EditNode(head, ID2, temp);
-            free(temp);
-            break;
-        case 4:
-            PrintTree(*head);
-            break;
-        default:
-            printf("Error input");
-            break;
+            case 1:
+                Directory *temp1 = InputPerson();
+                AddinBtree(head, temp1);
+                free(temp1);
+                break;
+            case 2:
+                printf("input ID:\n");
+                int ID1;
+                scanf("%d", &ID1);
+                DelNode(head, ID1);
+                break;
+            case 3:
+                printf("input ID:\n");
+                int ID2;
+                scanf("%d", &ID2);
+                Directory *temp = InputPersonIsNotId();
+                temp->id = ID2;
+                EditNode(head, ID2, temp);
+                free(temp);
+                break;
+            case 4:
+                PrintTree(*head);
+                break;
+            default:
+                printf("Error input");
+                break;
         }
     }
 }
@@ -178,7 +181,13 @@ Directory *InputPerson()
 {
     Directory *temp = (Directory *)malloc(sizeof(Directory));
     printf("input: ID\tName\tLast Name\tDay\tMonth\tYear\n");
-    scanf("%d %s %s %d %d %d", &temp->id, temp->name, temp->last_name, &temp->date.day, &temp->date.month, &temp->date.year);
+    scanf("%d %s %s %d %d %d",
+          &temp->id,
+          temp->name,
+          temp->last_name,
+          &temp->date.day,
+          &temp->date.month,
+          &temp->date.year);
     return temp;
 }
 
@@ -186,6 +195,11 @@ Directory *InputPersonIsNotId()
 {
     Directory *temp = (Directory *)malloc(sizeof(Directory));
     printf("input:\tName\tLast Name\tDay\tMonth\tYear\n");
-    scanf("%s %s %d %d %d", temp->name, temp->last_name, &temp->date.day, &temp->date.month, &temp->date.year);
+    scanf("%s %s %d %d %d",
+          temp->name,
+          temp->last_name,
+          &temp->date.day,
+          &temp->date.month,
+          &temp->date.year);
     return temp;
 }

@@ -18,10 +18,10 @@ typedef struct Directory
     Date date;
 } Directory;
 
-void add_person(Directory *list, int *cur_size, Directory* temp);
-void edit_user(int ID, Directory *list, Directory *temp, int* cur_size);
+void add_person(Directory *list, int *cur_size, Directory *temp);
+void edit_user(int ID, Directory *list, Directory *temp, int *cur_size);
 void print_sctuct(Directory *list, int cur_size);
 void menu(Directory *list, int *cur_size);
-void del(int ID, int* cur_size, Directory *list);
+void del(int ID, int *cur_size, Directory *list);
 
 #endif

@@ -1,54 +1,76 @@
-#include <stdio.h>
-#include <string.h>
+#include <errno.h>
+#include <fcntl.h>
 #include <mqueue.h>
+#include <stdio.h>
 #include <stdlib.h>
-/* int main() {
+#include <string.h>
+
+#define PRIO_1 1
+#define PRIO_2 2
+#define EX 20
+
+int main()
+{
     mqd_t ds;
     struct mq_attr mes;
-    int prio;
-    ds = mq_open("/name", O_RDWR);
-    //mq_send(ds, "dfsf", 4, 1);
-    char ff[12];
-    mq_receive(ds, ff, 256, &prio);
-    printf("%s\n", ff);
-    mq_close(ds);
-    return 0;
-} */
+    int priority;
+    int run = 1;
 
-
-
-int main() {
-    mqd_t ds;
-    struct mq_attr mes;
-    int prio;
-
-    // Открываем очередь только для чтения (без O_CREAT, чтобы не создавать новую)
-    ds = mq_open("/name", O_RDONLY);
-    if (ds == (mqd_t)-1) {
+    ds = mq_open("/my_queue", O_RDWR);
+    if (ds == (mqd_t)-1)
+    {
         perror("mq_open failed");
-        exit(1);
+        exit(EXIT_FAILURE);
     }
 
-    // Получаем атрибуты очереди
-    if (mq_getattr(ds, &mes) == -1) {
+    if (mq_getattr(ds, &mes) == -1)
+    {
         perror("mq_getattr failed");
-        exit(1);
+        exit(EXIT_FAILURE);
     }
 
-    // Выделяем буфер достаточного размера (+1 для '\0')
-    char ff[mes.mq_msgsize + 1];
+    char buffer[mes.mq_msgsize + 1];
 
-    // Принимаем сообщение
-    ssize_t received = mq_receive(ds, ff, mes.mq_msgsize, &prio);
-    if (received == -1) {
-        perror("mq_receive failed");
-        exit(1);
+    while (run)
+    {
+        ssize_t bytes_read = mq_receive(ds, buffer, mes.mq_msgsize, &priority);
+        if (bytes_read == -1)
+        {
+            perror("mq_receive failed");
+            exit(EXIT_FAILURE);
+        }
+        buffer[bytes_read] = '\0';
+        printf("Received message: %s (priority: %d)\n", buffer, priority);
+        if (strncmp(buffer, "exit", 4) == 0)
+        {
+            run = 0;
+        }
+        if (!run)
+        {
+            break;
+        }
+
+        printf("prog2: \n");
+        fgets(buffer, mes.mq_msgsize, stdin);
+
+        if (mq_send(ds, buffer, strlen(buffer), PRIO_2) == -1)
+        {
+            perror("mq_send failed");
+            exit(EXIT_FAILURE);
+        }
+        printf("Message sent->\n");
+
+        if (strncmp(buffer, "exit", 4) == 0)
+        {
+            run = 0;
+        }
+        if (!run)
+        {
+            break;
+        }
     }
-
-    ff[received] = '\0'; // Добавляем нуль-терминатор
-    printf("Received: %s\n", ff);
 
     mq_close(ds);
-    mq_unlink("/name"); // Удаляем очередь после использования
+    mq_unlink("/my_queue");
     return 0;
 }
