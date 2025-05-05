@@ -4,4 +4,4 @@
 *.vscode/
 *.out
 *.lib
-
+.clang-format

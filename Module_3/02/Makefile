@@ -1,8 +1,12 @@
-all: 
-	gcc -Wall -Wextra main.c -o square
+all:
+	gcc main.c -o interpreter
 
 sum:
-	gcc -Wall -Wextra sum.c -o sum
+	gcc sum.c -o sum
+
+str:
+	gcc str.c -o str
+
 
 clean:
-	rm ./square
+	rm ./sum ./str ./interpreter
