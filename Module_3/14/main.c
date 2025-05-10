@@ -6,7 +6,6 @@
 #include <sys/socket.h>
 #include <unistd.h>
 
-#define PORT 50000
 #define BUFFER_SIZE 1024
 
 /* Задание 14 (UDP сокеты, 2 балла)
@@ -15,9 +14,9 @@
 
 int main(int argc, char *argv[])
 {
-    if (argc != 3) {
-        exit(1);
-    }
+    // if (argc != 3) {
+    //     exit(1);
+    // }
 
     int port = atoi(argv[1]);
     
@@ -27,7 +26,7 @@ int main(int argc, char *argv[])
 
     struct sockaddr_in local_addr;
     local_addr.sin_family = AF_INET;
-    local_addr.sin_port = htops(PORT);
+    local_addr.sin_port = htons(port);
     local_addr.sin_addr.s_addr = inet_addr("0.0.0.0");
 
     int sock = socket(AF_INET, SOCK_DGRAM, 0);
@@ -35,10 +34,12 @@ int main(int argc, char *argv[])
 
     struct sockaddr_in peer_addr;
     peer_addr.sin_family = AF_INET;
-    peer_addr.sin_port = htops(PORT);
+    peer_addr.sin_port = htons(peer_port);
     peer_addr.sin_addr.s_addr = inet_addr("0.0.0.0");
 
-    inet_pton(AF_INET, "127.0.0.1", &peer_addr.sin_addr);
+    inet_pton(AF_INET, argv[3], &peer_addr.sin_addr);
+    inet_pton(AF_INET, argv[3], &peer_addr.sin_addr);
+
 
     pid_t pid = fork();
 
@@ -68,10 +69,10 @@ int main(int argc, char *argv[])
             while(1) {
                 ssize_t len = recvfrom(sock, buffer, BUFFER_SIZE, 0,  (struct sockaddr*)&from_addr, &addr_len); 
                 buffer[len] = '\0';
-                printf("Received: %s", buffer);
+                printf("new message:: %s", buffer);
             }
             break;
     }
-    close(sockfd);
+    close(sock);
     return 0;
 }
