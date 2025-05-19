@@ -4,18 +4,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/ipc.h>
+#include <sys/mman.h>
 #include <sys/shm.h>
 #include <sys/types.h>
 #include <sys/wait.h>
 #include <time.h>
 #include <unistd.h>
-#include <sys/mman.h> 
 
 /* Задание 13 (Разделяемая память POSIX, 3 балла)
-Родительский процесс генерирует наборы из случайного количества случайных чисел и помещает в разделяемую память.
-Дочерний процесс находит максимальное и минимальное число и также помещает их в разделяемую память, после чего родительский процесс выводит найденные значения на экран.
-Процесс повторяется до получения сигнала SIGINT, после чего выводится количество обработанных наборов данных. */
-
+Родительский процесс генерирует наборы из случайного количества случайных чисел
+и помещает в разделяемую память. Дочерний процесс находит максимальное и
+минимальное число и также помещает их в разделяемую память, после чего
+родительский процесс выводит найденные значения на экран. Процесс повторяется до
+получения сигнала SIGINT, после чего выводится количество обработанных наборов
+данных. */
 
 #define MAX_SIZE 100
 #define MAX_NUMBER 10000
@@ -43,29 +45,25 @@ void clear(Pac *pac)
 void sigint_handler(int sig)
 {
     running = 0;
-
 }
-
-
 
 int main()
 {
-
     shm_unlink("/name");
     sem_unlink("/semaphore_1");
     sem_unlink("/semaphore_2");
 
-
     srand(time(NULL));
     signal(SIGINT, sigint_handler);
 
-    sem_t *sem = sem_open("/semaphore_1", O_CREAT|O_EXCL, 0666, 0);
-    sem_t *sem_0 = sem_open("/semaphore_2", O_CREAT|O_EXCL, 0666, 0);
+    sem_t *sem = sem_open("/semaphore_1", O_CREAT | O_EXCL, 0666, 0);
+    sem_t *sem_0 = sem_open("/semaphore_2", O_CREAT | O_EXCL, 0666, 0);
 
     int shmid = shm_open("/name", O_RDWR | O_CREAT, 0666);
     ftruncate(shmid, sizeof(Pac));
 
-    Pac *object = (Pac *)mmap(NULL, sizeof(Pac), PROT_READ | PROT_WRITE, MAP_SHARED, shmid, 0);
+    Pac *object = (Pac *)mmap(
+        NULL, sizeof(Pac), PROT_READ | PROT_WRITE, MAP_SHARED, shmid, 0);
 
     __pid_t pid = fork();
 
@@ -93,10 +91,9 @@ int main()
                 object->max = max;
 
                 sem_post(sem);
-                
+
                 // printf("stop find ---------------------\n");
                 // usleep(10000000);
-
             }
             shmdt(object);
             exit(EXIT_SUCCESS);
@@ -137,15 +134,15 @@ int main()
             printf("Total sets processed: %d\n", object->count);
             munmap(object, sizeof(Pac));
             shm_unlink("/name");
-            close(shmid);  
-            
+            close(shmid);
+
             sem_close(sem);
             sem_close(sem_0);
             sem_unlink("/semaphore_1");
             sem_unlink("/semaphore_2");
             // shmdt(object);
             // shmctl(shmid, IPC_RMID, NULL);
-  
+
             break;
     }
 

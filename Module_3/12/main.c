@@ -43,14 +43,12 @@ void sigint_handler(int sig)
     running = 0;
 }
 
-
-
 int main()
 {
     srand(time(NULL));
     signal(SIGINT, sigint_handler);
-    sem_t *sem = sem_open("/semaphore_1", O_CREAT|O_EXCL, 0666, 0);
-    sem_t *sem_0 = sem_open("/semaphore_2", O_CREAT|O_EXCL, 0666, 0);
+    sem_t *sem = sem_open("/semaphore_1", O_CREAT | O_EXCL, 0666, 0);
+    sem_t *sem_0 = sem_open("/semaphore_2", O_CREAT | O_EXCL, 0666, 0);
 
     int shmid = shmget(IPC_PRIVATE, sizeof(Pac), 0666 | IPC_CREAT);
     Pac *object = (Pac *)shmat(shmid, NULL, 0);
@@ -80,10 +78,9 @@ int main()
                 object->max = max;
 
                 sem_post(sem);
-                
+
                 printf("stop find ---------------------\n");
                 usleep(10000000);
-
             }
             shmdt(object);
             exit(EXIT_SUCCESS);
@@ -113,7 +110,7 @@ int main()
                 clear(object);
                 usleep(10000000);
             }
-            sem_post(sem_0); // Разблокируем дочерний процесс
+            sem_post(sem_0);  // Разблокируем дочерний процесс
 
             if (wait(NULL) == -1)
             {

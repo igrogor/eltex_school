@@ -87,12 +87,12 @@ int main(int argc, char *argv[])
             sem_lock(semid);
             int file = open("file.txt", O_CREAT | O_WRONLY | O_APPEND, 0644);
             int initial_num = 0;
-            write(file, &initial_num, sizeof(int));
+            // write(file, &initial_num, sizeof(int));
             close(file);
             sem_unlock(semid);
             usleep(100000);
 
-            for (int i = 0; i < count; i++)
+            for (int i = 1; i < count; i++)
             {
                 int num;
                 read(pipefd[0], &num, sizeof(int));

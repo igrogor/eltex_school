@@ -19,10 +19,8 @@ int main(int argc, char *argv[])
     // }
 
     int port = atoi(argv[1]);
-    
-    int peer_port = atoi(argv[2]);
-   
 
+    int peer_port = atoi(argv[2]);
 
     struct sockaddr_in local_addr;
     local_addr.sin_family = AF_INET;
@@ -39,7 +37,6 @@ int main(int argc, char *argv[])
 
     inet_pton(AF_INET, argv[3], &peer_addr.sin_addr);
     inet_pton(AF_INET, argv[3], &peer_addr.sin_addr);
-
 
     pid_t pid = fork();
 
@@ -66,8 +63,14 @@ int main(int argc, char *argv[])
             socklen_t addr_len = sizeof(from_addr);
             char buffer[BUFFER_SIZE];
 
-            while(1) {
-                ssize_t len = recvfrom(sock, buffer, BUFFER_SIZE, 0,  (struct sockaddr*)&from_addr, &addr_len); 
+            while (1)
+            {
+                ssize_t len = recvfrom(sock,
+                                       buffer,
+                                       BUFFER_SIZE,
+                                       0,
+                                       (struct sockaddr *)&from_addr,
+                                       &addr_len);
                 buffer[len] = '\0';
                 printf("new message:: %s", buffer);
             }
