@@ -1,7 +1,7 @@
-*.o
-*.a
-*.dll
-*.vscode/
-*.out
-*.lib
-.clang-format
+//*.o
+//*.a
+//*.dll
+//*.vscode/
+//*.out
+//*.lib
+//.clang-format
