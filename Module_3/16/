@@ -1,23 +1,10 @@
-#include <netdb.h>
-#include <netinet/in.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <sys/socket.h>
-#include <sys/types.h>
-#include <unistd.h>
-
-#define FILE_CMD "file"
-#define FILE_ACK "ACK_FILE"
-
-void error(const char *msg) {
-    perror(msg);
+  perror(msg);
     exit(0);
 }
 
 void send_file(int sock, const char *filename) {
-    FILE *file = fopen(filename, "rb");
-    if (!file) {
+    FILE *fp = fopen(filename, "rb");
+    if (!fp) {
         perror("File open error");
         return;
     }
@@ -29,18 +16,18 @@ void send_file(int sock, const char *filename) {
     send(sock, filename, strlen(filename) + 1, 0);
 
     // Получаем размер файла
-    fseek(file, 0L, SEEK_END);
-    long filesize = ftell(file);
-    rewind(file);
+    fseek(fp, 0L, SEEK_END);
+    long filesize = ftell(fp);
+    rewind(fp);
     send(sock, &filesize, sizeof(filesize), 0);
 
     // Отправляем содержимое
     char buff[20 * 1024];
-    while (!feof(file)) {
-        int n = fread(buff, 1, sizeof(buff), file);
+    while (!feof(fp)) {
+        int n = fread(buff, 1, sizeof(buff), fp);
         send(sock, buff, n, 0);
     }
-    fclose(file);
+    fclose(fp);
 
     // Ждем подтверждение
     int n = recv(sock, buff, sizeof(buff) - 1, 0);
@@ -137,6 +124,4 @@ int main(int argc, char *argv[]) {
             printf("Result: %s\n", buff);
         }
     }
-    close(my_sock);
-    return 0;
-}
+   

@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
     peer_addr.sin_port = htons(peer_port);
     peer_addr.sin_addr.s_addr = inet_addr("0.0.0.0");
 
-    inet_pton(AF_INET, argv[3], &peer_addr.sin_addr);
+    // inet_pton(AF_INET, argv[3], &peer_addr.sin_addr);
     inet_pton(AF_INET, argv[3], &peer_addr.sin_addr);
 
     pid_t pid = fork();
