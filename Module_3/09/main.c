@@ -16,6 +16,8 @@
 читается.
 */
 
+/* Для компиляции make, затем ./main N, где N - число для генерации */
+
 #define KEY 1234
 #define MAX 3
 #define PROCESS 5

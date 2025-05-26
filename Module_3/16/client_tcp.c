@@ -136,6 +136,7 @@ int main(int argc, char *argv[]) {
             buff[n] = '\0';
             printf("Result: %s\n", buff);
         }
+        break;
     }
     close(my_sock);
     return 0;

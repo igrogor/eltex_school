@@ -4,9 +4,21 @@
 Можно дополнить программу так, чтобы она расшифровывала и выводила в файл или на экран полученные сообщения.
  */
 
- #include <stdio.h>
+#include <stdio.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
 
- int main() {
-    
-    return 0;
- }
+struct sockaddr_in myaddr;
+
+
+
+int main() {
+   fd = socket(AF_INET, SOCK_RAW, IPPROTO_UDP);
+
+   while (1)
+   {
+      
+   }
+   
+   return 0;
+}

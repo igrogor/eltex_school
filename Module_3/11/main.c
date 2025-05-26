@@ -1,8 +1,9 @@
 #include <fcntl.h>
-#include <semaphore.h>
 #include <signal.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <sys/mman.h>
+#include <semaphore.h>
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <sys/wait.h>
@@ -14,8 +15,11 @@
 количество) могли читать из файла. Запись в файл возможна, когда он никем не
 читается. */
 
-#define MAX_READERS 3
-#define SEM_NAME "/read_slots"
+/* Для компиляции make, затем ./main N, где N - число для генерации */
+
+
+#define PROCESS_COUNT 5      
+#define MAX_READERS 3        
 
 int running = 1;
 
@@ -26,93 +30,97 @@ void terminate_handler(int sig)
 
 int main(int argc, char *argv[])
 {
-    if (argc != 2) exit(EXIT_FAILURE);
-    int count = atoi(argv[1]);
-    if (count <= 0) exit(EXIT_FAILURE);
+    if (argc != 2) {
+        fprintf(stderr, "Usage: %s <count>\n", argv[0]);
+        exit(EXIT_FAILURE);
+    }
+    int write_count = atoi(argv[1]);
+    if (write_count <= 0) exit(EXIT_FAILURE);
 
-    sem_unlink(SEM_NAME);
-    sem_t *sem = sem_open(SEM_NAME, O_CREAT | O_EXCL, 0666, MAX_READERS);
-    if (sem == SEM_FAILED)
-    {
+    int pipefd[2];
+    if (pipe(pipefd) == -1) {
+        perror("pipe");
+        exit(EXIT_FAILURE);
+    }
+
+    sem_t *sem = sem_open("/read_sem", O_CREAT | O_EXCL, 0666, MAX_READERS);
+    if (sem == SEM_FAILED) {
         perror("sem_open");
         exit(EXIT_FAILURE);
     }
 
-    int pipefd[2];
-    if (pipe(pipefd)) exit(EXIT_FAILURE);
+    int file = open("file.txt", O_CREAT | O_WRONLY | O_TRUNC, 0644);
+    int initial_value = 0;
+    write(file, &initial_value, sizeof(int));
+    close(file);
 
-    pid_t pid = fork();
-    switch (pid)
-    {
-        case -1:
+    pid_t pids[PROCESS_COUNT];
+    for (int i = 0; i < PROCESS_COUNT; ++i) {
+        pid_t pid = fork();
+        if (pid == -1) {
+            perror("fork");
             exit(EXIT_FAILURE);
-            break;
-        case 0:
-            close(pipefd[0]);
-
+        }
+        if (pid == 0) {
+            close(pipefd[0]); 
             signal(SIGTERM, terminate_handler);
             srand(time(NULL) ^ getpid());
 
-            while (running)
-            {
-                sem_wait(sem);
+            while (running) {
+                sem_wait(sem); 
 
                 int file = open("file.txt", O_RDONLY);
                 lseek(file, -sizeof(int), SEEK_END);
-
-                int a;
-                read(file, &a, sizeof(int));
-                printf("pid:%d - %d\n", getpid(), a);
-
-                int num = rand() % 1000;
-                write(pipefd[1], &num, sizeof(int));
+                int num;
+                read(file, &num, sizeof(int));
+                printf("pid:%d — read: %d\n", getpid(), num);
                 close(file);
 
-                sem_post(sem);
+                int new_num = rand() % 1000;
+                write(pipefd[1], &new_num, sizeof(int));
+
+                sem_post(sem); 
 
                 usleep(100000);
             }
+
             close(pipefd[1]);
+            sem_close(sem);
             exit(EXIT_SUCCESS);
-            break;
+        } else {
+            pids[i] = pid;
+        }
+    }
 
-        default:
-            close(pipefd[1]);
+    close(pipefd[1]); 
+    for (int i = 0; i < write_count; ++i) {
+        int value;
+        read(pipefd[0], &value, sizeof(int));
 
-            for (int i = 0; i < MAX_READERS; i++) sem_wait(sem);
-            int file = open("file.txt", O_CREAT | O_WRONLY | O_TRUNC, 0644);
-            int initial_num = 0;
-            write(file, &initial_num, sizeof(int));
-            close(file);
-            for (int i = 0; i < MAX_READERS; i++) sem_post(sem);
+        for (int j = 0; j < MAX_READERS; ++j) {
+            sem_wait(sem);
+        }
 
-            usleep(100000);
+        int file = open("file.txt", O_WRONLY | O_APPEND);
+        printf("parent — write: %d\n", value);
+        write(file, &value, sizeof(int));
+        close(file);
 
-            for (int i = 0; i < count; i++)
-            {
-                int num;
-                read(pipefd[0], &num, sizeof(int));
+        for (int j = 0; j < MAX_READERS; ++j) {
+            sem_post(sem);
+        }
 
-                for (int j = 0; j < MAX_READERS; j++) sem_wait(sem);
+        usleep(100000);
+    }
+    close(pipefd[0]);
 
-                int file1 = open("file.txt", O_WRONLY | O_APPEND);
-                write(file1, &num, sizeof(int));
-                close(file1);
-
-                for (int j = 0; j < MAX_READERS; j++) sem_post(sem);
-
-                usleep(100000);
-            }
-
-            close(pipefd[0]);
-            kill(pid, SIGTERM);
-            wait(NULL);
-
-            break;
+    for (int i = 0; i < PROCESS_COUNT; ++i) {
+        kill(pids[i], SIGTERM);
+        waitpid(pids[i], NULL, 0);
     }
 
     sem_close(sem);
-    sem_unlink(SEM_NAME);
+    sem_unlink("/read_sem");
 
     return 0;
 }

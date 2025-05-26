@@ -7,6 +7,10 @@
 #include <sys/types.h>
 #include <unistd.h>
 
+
+/* Для запуска:
+вызвать make, после запустить ./server_tcp 50000 и потом ./client_tcp localhost 50000 */
+
 void error(const char *msg)
 {
     perror(msg);
