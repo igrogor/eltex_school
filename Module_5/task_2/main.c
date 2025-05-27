@@ -50,7 +50,7 @@ int proc_init (void) {
 }
  
 void proc_cleanup(void) {
-    remove_proc_entry("hello", NULL);
+    remove_proc_entry("proc", NULL);
     kfree(msg);
 }
  
