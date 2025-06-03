@@ -1,6 +1,11 @@
-#include <linux/module.h>
-#include <linux/kernel.h>
 #include <linux/init.h>
+#include <linux/kernel.h>
+#include <linux/module.h>
+
+/* Задание 1 по модулю 5: Написать модуль ядра Hello World для своей версии
+ядра. Поменять описание модуля, добавить себя как автора и придумать свою
+лицензию. Результаты выложить на github или др. общедоступный git. Cсылку на git
+выслать в ЛС для проверки. Скрины запуска модуля не забываем. */
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("EGORTERENTEV");

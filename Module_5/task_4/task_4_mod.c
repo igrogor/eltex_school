@@ -14,19 +14,29 @@
 
 static int major;
 
-enum {
+enum
+{
     CDEV_NOT_USED = 0,
     CDEV_EXCLUSIVE_OPEN = 1,
 };
 
-static char msg[BUF_LEN];
+char *mes;
+
+static char default_msg[BUF_LEN] = "Hello world!";
+static char display_msg[BUF_LEN];
+static char user_msg[BUF_LEN];
+
+static int counter = 0;
+
 static atomic_t already_open = ATOMIC_INIT(CDEV_NOT_USED);
 static struct class *cls;
 
 static int device_open(struct inode *inode, struct file *file);
 static int device_release(struct inode *inode, struct file *file);
-static ssize_t device_read(struct file *filp, char __user *buffer, size_t length, loff_t *offset);
-static ssize_t device_write(struct file *filp, const char __user *buff, size_t len, loff_t *off);
+static ssize_t device_read(struct file *filp, char __user *buffer,
+                           size_t length, loff_t *offset);
+static ssize_t device_write(struct file *filp, const char __user *buff,
+                            size_t len, loff_t *off);
 
 static struct file_operations chardev_fops = {
     .read = device_read,
@@ -37,12 +47,28 @@ static struct file_operations chardev_fops = {
 
 static int device_open(struct inode *inode, struct file *file)
 {
-    static int counter = 0;
-
-    if (atomic_cmpxchg(&already_open, CDEV_NOT_USED, CDEV_EXCLUSIVE_OPEN) != CDEV_NOT_USED)
+    if (atomic_cmpxchg(&already_open, CDEV_NOT_USED, CDEV_EXCLUSIVE_OPEN) !=
+        CDEV_NOT_USED)
         return -EBUSY;
 
-    sprintf(msg, "I already told you %d times Hello world!\n", counter++);
+    if (user_msg[0] == '\0')
+    {
+        // Используем сообщение по умолчанию
+        snprintf(display_msg,
+                 BUF_LEN,
+                 "I already told you %d times %s",
+                 counter,
+                 default_msg);
+    }
+    else
+    {
+        // Используем пользовательское сообщение
+        snprintf(display_msg,
+                 BUF_LEN,
+                 "I already told you %d times %s",
+                 counter,
+                 user_msg);
+    }
     try_module_get(THIS_MODULE);
     return SUCCESS;
 }
@@ -57,30 +83,52 @@ static int device_release(struct inode *inode, struct file *file)
 static ssize_t device_read(struct file *filp, char __user *buffer,
                            size_t length, loff_t *offset)
 {
-    int bytes_read = 0;
-    const char *msg_ptr = msg;
-    if (!*(msg_ptr + *offset))
-    {
-        *offset = 0;
-        return 0;
-    }
-    msg_ptr += *offset;
-    while (length && *msg_ptr)
-    {
-        put_user(*(msg_ptr++), buffer++);
-        length--;
-        bytes_read++;
-    }
-    *offset += bytes_read;
-    return bytes_read;
+    size_t msg_len = strlen(display_msg);
+    size_t bytes_to_read;
+
+    if (*offset >= msg_len) return 0;
+
+    bytes_to_read = min(length, msg_len - *offset);
+
+    if (copy_to_user(buffer, display_msg + *offset, bytes_to_read))
+        return -EFAULT;
+
+    *offset += bytes_to_read;
+    return bytes_to_read;
+    /*     int bytes_read = 0;
+        const char *msg_ptr = msg;
+        if (!*(msg_ptr + *offset))
+        {
+            *offset = 0;
+            return 0;
+        }
+        msg_ptr += *offset;
+        while (length && *msg_ptr)
+        {
+            put_user(*(msg_ptr++), buffer++);
+            length--;
+            bytes_read++;
+        }
+        *offset += bytes_read;
+        return bytes_read; */
 }
 
-static ssize_t device_write(struct file *filp, const char __user *buff, 
+static ssize_t device_write(struct file *filp, const char __user *buff,
                             size_t len, loff_t *off)
-{ 
-    pr_alert("Sorry, this operation is not supported.\n"); 
-    return -EINVAL; 
-} 
+{
+    if (len >= BUF_LEN) return -EINVAL;
+
+    memset(user_msg, 0, BUF_LEN);
+
+    if (copy_from_user(user_msg, buff, len)) return -EFAULT;
+
+    if (len > 0 && user_msg[len - 1] == '\n')
+        user_msg[len - 1] = '\0';
+    else
+        user_msg[len] = '\0';
+
+    return len;
+}
 
 static int __init chardev_init(void)
 {
