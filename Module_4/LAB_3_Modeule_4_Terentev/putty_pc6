@@ -1,0 +1,34 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2025.06.16 18:09:01 =~=~=~=~=~=~=~=~=~=~=~=
+[12~ \    ip 192.168.33.3 /24
+Checking for duplicate address...
+PC6 : 192.168.33.3 255.255.255.0
+
+PC6> ip 192.168.33.3 /24                   ip 192.168.33.3 /24                   ip 192.168.33.3 /24                   ping 912   192, .168/ .33/ .1
+
+84 bytes from 192.168.33.1 icmp_seq=1 ttl=64 time=10.715 ms
+84 bytes from 192.168.33.1 icmp_seq=2 ttl=64 time=8.605 ms
+84 bytes from 192.168.33.1 icmp_seq=3 ttl=64 time=7.989 ms
+84 bytes from 192.168.33.1 icmp_seq=4 ttl=64 time=9.065 ms
+84 bytes from 192.168.33.1 icmp_seq=5 ttl=64 time=7.010 ms
+
+PC6> ping 192.168.33.1 2
+
+84 bytes from 192.168.33.2 icmp_seq=1 ttl=64 time=1.994 ms
+84 bytes from 192.168.33.2 icmp_seq=2 ttl=64 time=2.121 ms
+84 bytes from 192.168.33.2 icmp_seq=3 ttl=64 time=11.140 ms
+84 bytes from 192.168.33.2 icmp_seq=4 ttl=64 time=6.191 ms
+84 bytes from 192.168.33.2 icmp_seq=5 ttl=64 time=2.694 ms
+
+PC6> ping 192.168.33.23.2 .2 2.20.2.2 1
+
+No gateway found
+
+PC6> ping 192.168.20.1 2
+
+No gateway found
+
+PC6> ping 192.168.20.2 3
+
+No gateway found
+
+PC6> 

@@ -1,0 +1,37 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2025.06.16 18:08:41 =~=~=~=~=~=~=~=~=~=~=~=
+ip 192.168.20.3 /24                   ip 192.168.20.3 /24
+Checking for duplicate address...
+PC5 : 192.168.20.3 255.255.255.0
+
+PC5> ip 192.168.20.3 /24                   ip 192.168.20.3 /24                   ip 192.168.20.3 /24ping
+Invalid options
+
+PC5> ping 102.   92, .168.20.1
+
+84 bytes from 192.168.20.1 icmp_seq=1 ttl=64 time=9.678 ms
+84 bytes from 192.168.20.1 icmp_seq=2 ttl=64 time=6.675 ms
+84 bytes from 192.168.20.1 icmp_seq=3 ttl=64 time=5.131 ms
+84 bytes from 192.168.20.1 icmp_seq=4 ttl=64 time=4.049 ms
+84 bytes from 192.168.20.1 icmp_seq=5 ttl=64 time=5.609 ms
+
+PC5> ping 192.168.20.1 2
+
+84 bytes from 192.168.20.2 icmp_seq=1 ttl=64 time=2.256 ms
+84 bytes from 192.168.20.2 icmp_seq=2 ttl=64 time=8.444 ms
+84 bytes from 192.168.20.2 icmp_seq=3 ttl=64 time=3.009 ms
+84 bytes from 192.168.20.2 icmp_seq=4 ttl=64 time=12.123 ms
+84 bytes from 192.168.20.2 icmp_seq=5 ttl=64 time=3.565 ms
+
+PC5> ping 192.168.20.2.2 .2 3.23.2.2 1
+
+No gateway found
+
+PC5> ping 192.168.33.1 2
+
+No gateway found
+
+PC5> ping 192.168.33.2 3
+
+No gateway found
+
+PC5> 

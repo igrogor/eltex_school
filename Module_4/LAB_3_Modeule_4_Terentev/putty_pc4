@@ -1,0 +1,34 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2025.06.16 18:07:36 =~=~=~=~=~=~=~=~=~=~=~=
+ping 192.168.33.3                 ping 192.168.33.2                 ping 192.168.33.1                 ip 192.168.33.2 /24
+Checking for duplicate address...
+PC4 : 192.168.33.2 255.255.255.0
+
+PC4> ip 192.168.33.2 /24                   ping 192.168.33.3
+
+84 bytes from 192.168.33.3 icmp_seq=1 ttl=64 time=12.313 ms
+84 bytes from 192.168.33.3 icmp_seq=2 ttl=64 time=7.252 ms
+84 bytes from 192.168.33.3 icmp_seq=3 ttl=64 time=6.734 ms
+84 bytes from 192.168.33.3 icmp_seq=4 ttl=64 time=6.364 ms
+84 bytes from 192.168.33.3 icmp_seq=5 ttl=64 time=6.800 ms
+
+PC4> ping 192.168.33.3 1
+
+84 bytes from 192.168.33.1 icmp_seq=1 ttl=64 time=16.751 ms
+84 bytes from 192.168.33.1 icmp_seq=2 ttl=64 time=14.904 ms
+84 bytes from 192.168.33.1 icmp_seq=3 ttl=64 time=11.882 ms
+84 bytes from 192.168.33.1 icmp_seq=4 ttl=64 time=5.434 ms
+84 bytes from 192.168.33.1 icmp_seq=5 ttl=64 time=13.493 ms
+
+PC4> ping 192.168.33.13.1 .1 2.10.1.1
+
+No gateway found
+
+PC4> ping 192.168.20.1 2
+
+No gateway found
+
+PC4> ping 192.168.20.2 3
+
+No gateway found
+
+PC4> 

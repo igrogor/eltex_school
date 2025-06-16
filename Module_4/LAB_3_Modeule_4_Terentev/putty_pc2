@@ -1,0 +1,35 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2025.06.16 18:06:24 =~=~=~=~=~=~=~=~=~=~=~=
+ping 192.168.33.2                 ping 192.168.33.2                 ping 192.168.33.1                 Ya Ustal        ping 192.168.20.1                 ping 192.168.33.1                 ping 192.168.33.2                 ping 192.168.33.3                 ping 192.168.33.3                 ping 192.168.33.2                 ping 192.168.33.1                 ping 192.168.33.1                 ping 192.168.33.2                 ip 192.168.33.1 /24                   ip 192.168.333.1 /24                    ip 192.168.33.1 /24                   ip 192.168.333.1 /24                    ip 192.168.33.1 /24                   ping 192.168.33.2                 ip 192.168.33.1 /24                   ping 192.168.33.2                 ip 192.168.33.1 /24
+Checking for duplicate address...
+PC2 : 192.168.33.1 255.255.255.0
+
+PC2> ip 192.168.33.1 /24                   ping 192.168.33.2
+
+84 bytes from 192.168.33.2 icmp_seq=1 ttl=64 time=6.648 ms
+84 bytes from 192.168.33.2 icmp_seq=2 ttl=64 time=7.488 ms
+84 bytes from 192.168.33.2 icmp_seq=3 ttl=64 time=2.395 ms
+84 bytes from 192.168.33.2 icmp_seq=4 ttl=64 time=4.643 ms
+84 bytes from 192.168.33.2 icmp_seq=5 ttl=64 time=2.884 ms
+
+PC2> ping 192.168.33.2 3
+
+84 bytes from 192.168.33.3 icmp_seq=1 ttl=64 time=8.305 ms
+84 bytes from 192.168.33.3 icmp_seq=2 ttl=64 time=7.604 ms
+84 bytes from 192.168.33.3 icmp_seq=3 ttl=64 time=5.287 ms
+84 bytes from 192.168.33.3 icmp_seq=4 ttl=64 time=8.571 ms
+84 bytes from 192.168.33.3 icmp_seq=5 ttl=64 time=1.830 ms
+
+PC2> ping 192.168.33.3.3 .3 2.30.3
+
+No gateway found
+
+PC2> ping 192.168.20.3 2
+
+No gateway found
+
+PC2> ping 192.168.20.2 1
+
+No gateway found
+
+PC2> 
+PC2> 
