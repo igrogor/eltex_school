@@ -1,0 +1,56 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2025.06.16 01:22:46 =~=~=~=~=~=~=~=~=~=~=~=
+exit    show ip       ip 192.168.0.1 /24
+Checking for duplicate address...
+PC1 : 192.168.0.1 255.255.255.0
+
+PC1> ip 192.168.0.1 /24                  exit    show ip       ip 192.168.0.1 /24                  show ip       exit    ip 192.168.0.1 /24                  ping 192.168/ .0.2
+
+84 bytes from 192.168.0.2 icmp_seq=1 ttl=64 time=7.111 ms
+84 bytes from 192.168.0.2 icmp_seq=2 ttl=64 time=7.441 ms
+84 bytes from 192.168.0.2 icmp_seq=3 ttl=64 time=6.739 ms
+84 bytes from 192.168.0.2 icmp_seq=4 ttl=64 time=9.164 ms
+84 bytes from 192.168.0.2 icmp_seq=5 ttl=64 time=7.349 ms
+
+PC1> ping 192.168.0.2 3
+
+84 bytes from 192.168.0.3 icmp_seq=1 ttl=64 time=8.144 ms
+84 bytes from 192.168.0.3 icmp_seq=2 ttl=64 time=8.517 ms
+84 bytes from 192.168.0.3 icmp_seq=3 ttl=64 time=1.554 ms
+84 bytes from 192.168.0.3 icmp_seq=4 ttl=64 time=9.654 ms
+84 bytes from 192.168.0.3 icmp_seq=5 ttl=64 time=8.564 ms
+
+PC1> ping 192.168.0.3 4
+
+84 bytes from 192.168.0.4 icmp_seq=1 ttl=64 time=5.792 ms
+84 bytes from 192.168.0.4 icmp_seq=2 ttl=64 time=3.652 ms
+84 bytes from 192.168.0.4 icmp_seq=3 ttl=64 time=2.727 ms
+84 bytes from 192.168.0.4 icmp_seq=4 ttl=64 time=7.379 ms
+84 bytes from 192.168.0.4 icmp_seq=5 ttl=64 time=1.572 ms
+
+PC1> ping 192.168.0.4 5
+
+84 bytes from 192.168.0.5 icmp_seq=1 ttl=64 time=11.723 ms
+84 bytes from 192.168.0.5 icmp_seq=2 ttl=64 time=7.830 ms
+84 bytes from 192.168.0.5 icmp_seq=3 ttl=64 time=10.219 ms
+84 bytes from 192.168.0.5 icmp_seq=4 ttl=64 time=7.794 ms
+84 bytes from 192.168.0.5 icmp_seq=5 ttl=64 time=3.651 ms
+
+PC1> ping 192.168.0.5 6
+
+84 bytes from 192.168.0.6 icmp_seq=1 ttl=64 time=8.829 ms
+84 bytes from 192.168.0.6 icmp_seq=2 ttl=64 time=5.696 ms
+84 bytes from 192.168.0.6 icmp_seq=3 ttl=64 time=12.180 ms
+84 bytes from 192.168.0.6 icmp_seq=4 ttl=64 time=3.739 ms
+84 bytes from 192.168.0.6 icmp_seq=5 ttl=64 time=3.049 ms
+
+PC1> ex  
+PC1> exit
+Bad command: "exit". Use ? for help.
+
+PC1> rnd   end
+Bad command: "end". Use ? for help.
+
+PC1> stop
+Bad command: "stop". Use ? for help.
+
+PC1> 
