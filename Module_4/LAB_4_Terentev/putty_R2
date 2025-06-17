@@ -1,0 +1,135 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2025.06.17 23:36:58 =~=~=~=~=~=~=~=~=~=~=~=
+configure show ip route interface brief route                  configure show interfaces configure       wr memory configure enable     '  configure wr memory configure 
+Configuring from terminal, memory, or network [terminal]? configure           
+Enter configuration commands, one per line.  End with CNTL/Z.
+R2(config)#endip route 192.168.1.0 255.255.255.0 192.168.3.3no shutdown                                   ip route 192.168.2.0 255.255.255.0 192.168.3.3exit                                          no shutdown ip route 192.168.2.0 255.255.255.0 192.168.3.31.0 255.255.255.0 192.168.3.3exit                                          no shutdown QQ          ip route 192.168.2.0 255.255.255.0 192.168.3.31.0 255.255.255.0 192.168.3.3 192.168.3.3 dhcp excluded-address 192.168.2.3         1.3exit                                lease 20dns-server 192.168.2.3efault-router 192.168.2.3ns-server 192.168.2.3    lease 20              exit    ip dhcp excluded-address 192.168.1.32.3route 192.168.1.0 255.255.255. 192.168.3.30 192.168.3.32.0 255.255.255.0 192.168.3.3QQ                                            no shutdown exit        ip route 192.168.1.0 255.255.255.0 192.168.3.32.0 255.255.255.0 192.168.3.3no shutdown                                   exit        ip route 192.168.2.0 255.255.255.0 192.168.3.3no shutdown                                   ip route 192.168.1.0 255.255.255.0 192.168.3.3end                                              endip route 192.168.1.0 255.255.255.0 192.168.3.3end                                           ip route 192.168.1.0 255.255.255.0 192.168.3.3
+R2(config)#ip route 192.168.1.0 255.255.255.0 192.168.3.3end                                           ip route 192.168.1.0 255.255.255.0 192.168.3.3.0 255.255.255.0 192.168.3.3 2.0 255.255.255.0 192.168.3.3
+R2(config)#ex xit
+R2#
+*Mar  1 02:40:00.107: %SYS-5-CONFIG_I: Configured from console by console
+R2#show ip rou
+R2#show ip route 
+Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+R2#conf
+R2#configure 
+Configuring from terminal, memory, or network [terminal]? 
+Enter configuration commands, one per line.  End with CNTL/Z.
+R2(config)#inter
+R2(config)#interface G
+R2(config)#interface Group-Async               G F
+R2(config)#interface FastEthernet 0/0
+R2(config-if)#no sh
+R2(config-if)#no shutdown 
+R2(config-if)#exit
+R2(config)#
+*Mar  1 02:42:05.867: %LINK-3-UPDOWN: Interface FastEthernet0/0, changed state to up
+*Mar  1 02:42:06.867: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to up
+R2(config)#show intye  e
+R2(config)#show inte  
+R2(config)#show in
+R2(config)#show int
+R2(config)#show inte
+R2(config)#show inter
+R2(config)#show inter          exit
+R2#show
+*Mar  1 02:42:44.419: %SYS-5-CONFIG_I: Configured from console by console
+R2#show    ow int
+R2#show interfaces br
+R2#show interfaces br
+R2#show interfaces br
+R2#show interfaces bri
+R2#show interfaces bri
+R2#show interfaces brie
+R2#show interfaces brief
+                    ^
+% Invalid input detected at '^' marker.
+
+R2#w show interfaces brief     ?
+  Async              Async interface
+  BVI                Bridge-Group Virtual Interface
+  CDMA-Ix            CDMA Ix interface
+  CTunnel            CTunnel interface
+  Dialer             Dialer interface
+  FastEthernet       FastEthernet IEEE 802.3
+  Loopback           Loopback interface
+  MFR                Multilink Frame Relay bundle interface
+  Multilink          Multilink-group interface
+  Null               Null interface
+  Port-channel       Ethernet Channel of interfaces
+  Tunnel             Tunnel interface
+  Vif                PGM Multicast Host interface
+  Virtual-PPP        Virtual PPP interface
+  Virtual-Template   Virtual Template interface
+  Virtual-TokenRing  Virtual TokenRing
+  accounting         Show interface accounting
+  counters           Show interface counters
+  crb                Show interface routing/bridging info
+  dampening          Show interface dampening info
+  description        Show interface description
+  etherchannel       Show interface etherchannel information
+ --More--           irb                Show interface routing/bridging info
+ --More--           mac-accounting     Show interface MAC accounting info
+ --More--           mpls-exp           Show interface MPLS experimental accounting info
+ --More--           precedence         Show interface precedence accounting info
+ --More--           pruning            Show interface trunk VTP pruning information
+ --More--           rate-limit         Show interface rate-limit info
+ --More--           stats              Show interface packets & octets, in & out, by switching
+ --More--                              path
+ --More--           status             Show interface line status
+ --More--           summary            Show interface summary
+ --More--           switching          Show interface switching
+ --More--           switchport         Show interface switchport information
+ --More--           trunk              Show interface trunk information
+ --More--           |                  Output modifiers
+ --More--           <cr>
+ --More--         
+R2#show interfaces 
+FastEthernet0/0 is up, line protocol is up 
+  Hardware is AmdFE, address is cc02.3ea9.0000 (bia cc02.3ea9.0000)
+  Internet address is 192.168.3.2/24
+  MTU 1500 bytes, BW 100000 Kbit/sec, DLY 100 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation ARPA, loopback not set
+  Keepalive set (10 sec)
+  Full-duplex, 100Mb/s, 100BaseTX/FX
+  ARP type: ARPA, ARP Timeout 04:00:00
+  Last input 00:00:33, output 00:00:06, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/40 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     2 packets input, 704 bytes
+     Received 2 broadcasts, 0 runts, 0 giants, 0 throttles
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+     0 watchdog
+     0 input packets with dribble condition detected
+     16 packets output, 2072 bytes, 0 underruns
+     0 output errors, 0 collisions, 1 interface resets
+ --More--              0 unknown protocol drops
+ --More--              0 babbles, 0 late collision, 0 deferred
+ --More--              0 lost carrier, 0 no carrier
+ --More--              0 output buffer failures, 0 output buffers swapped out
+R2#
+R2#
+R2#
+R2#
+R2#
+R2#
+R2#show interfaces br
+R2#show interfaces bri
+R2#show interfaces bri
+R2#show interfaces bri 
+R2#show interfaces br                  conf
+R2#configure 
+R2#

@@ -1,0 +1,561 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2025.06.17 21:11:35 =~=~=~=~=~=~=~=~=~=~=~=
+inter
+R1(config)#interface ?
+  Async              Async interface
+  BVI                Bridge-Group Virtual Interface
+  CDMA-Ix            CDMA Ix interface
+  CTunnel            CTunnel interface
+  Dialer             Dialer interface
+  FastEthernet       FastEthernet IEEE 802.3
+  Group-Async        Async Group interface
+  Lex                Lex interface
+  Loopback           Loopback interface
+  MFR                Multilink Frame Relay bundle interface
+  Multilink          Multilink-group interface
+  Null               Null interface
+  Port-channel       Ethernet Channel of interfaces
+  Tunnel             Tunnel interface
+  Vif                PGM Multicast Host interface
+  Virtual            Virtual interface
+  Virtual-PPP        Virtual PPP interface
+  Virtual-Template   Virtual Template interface
+  Virtual-TokenRing  Virtual TokenRing
+  range              interface range command
+
+R1(config)#interface f F
+R1(config)#interface FastEthernet ?
+  <0-6>  FastEthernet interface number
+
+R1(config)#interface FastEthernet                 
+R1(config)#interface sinterface hinterface ointerface winterface  interface 
+             ^
+% Invalid input detected at '^' marker.
+
+R1(config)#show interface                exit
+R1#sh
+*Mar  1 00:41:07.171: %SYS-5-CONFIG_I: Configured from console by console
+R1#show f
+R1#show f inter
+R1#show interfaces f F
+R1#show interfaces FastEthernet 
+% Incomplete command.
+
+R1#show interfaces FastEthernet              sta
+R1#show interfaces status
+R1#show interfaces status 
+
+R1#show interfaces status  
+
+R1#show interfaces status       
+FastEthernet0/0 is administratively down, line protocol is down 
+  Hardware is AmdFE, address is cc01.3e8b.0000 (bia cc01.3e8b.0000)
+  MTU 1500 bytes, BW 100000 Kbit/sec, DLY 100 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation ARPA, loopback not set
+  Keepalive set (10 sec)
+  Full-duplex, 100Mb/s, 100BaseTX/FX
+  ARP type: ARPA, ARP Timeout 04:00:00
+  Last input never, output never, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/40 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes
+     Received 0 broadcasts, 0 runts, 0 giants, 0 throttles
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+     0 watchdog
+     0 input packets with dribble condition detected
+     0 packets output, 0 bytes, 0 underruns
+     0 output errors, 0 collisions, 0 interface resets
+     0 unknown protocol drops
+ --More--         
+R1#show interfaces status FastEthernet configure                    
+Configuring from terminal, memory, or network [terminal]? 
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#inter
+R1(config)#interface F
+R1(config)#interface FastEthernet 0/0
+R1(config-if)#ip add
+R1(config-if)#ip address   192.168Q .1.0 255.255.255.- 0
+Bad mask /24 for address 192.168.1.0
+R1(config-if)#Q
+R1#QQ P5
+*Mar  1 01:12:07.967: %SYS-5-CONFIG_I: Configured from console by console
+R1#QP5
+Translating "QP5"
+
+Translating "QP5"
+% Unknown command or computer name, or unable to find computer address
+R1#QcQQ on
+R1#conf
+R1#configure 
+Configuring from terminal, memory, or network [terminal]? 
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#inte
+R1(config)#interface F
+R1(config)#interface FastEthernet 1/0
+R1(config-if)#ip addre
+R1(config-if)#ip address 196 7 8.  2.168..1  3/ .3 255.255.255.0
+R1(config-if)#ip address 192.168.3.3 255.255.255.0nterface FastEthernet 1/0          p address 192.168.3.3 255.255.255.0                                    exit
+R1(config)#exitip address 192.168.3.3 255.255.255.0nterface FastEthernet 1/0          p address 192.168.1.0 255.255.255.0nterface FastEthernet 0/0          
+R1(config-if)#interface FastEthernet 0/0exit                      ip address 192.168.3.3 255.255.255.0nterface FastEthernet 1/0          p address 192.168.1.0 255.255.255.0 255.255.255.0 3 255.255.255.0
+R1(config-if)#exit
+R1(config)#exitip address 192.168.1.3 255.255.255.0.3 255.255.255.0 3.3 255.255.255.0..3 255.255.255.0 2.3 255.255.255.0.3 255.255.255.0exit                                ip address 192.168.1.3 255.255.255.0nterface FastEthernet 0/0          /0 2/0
+R1(config-if)#interface FastEthernet 2/0exit                      ip address 192.168.1.3 255.255.255.0.3 255.255.255.0 2.3 255.255.255.0
+R1(config-if)#  no sh
+R1(config-if)#no shutdown 
+R1(config-if)#ex
+*Mar  1 02:05:02.847: %LINK-3-UPDOWN: Interface FastEthernet2/0, changed state to up
+*Mar  1 02:05:03.847: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet2/0, changed state to up
+R1(config-if)#exit
+R1(config)#rxit    no sh   ex    exit
+R1#
+*Mar  1 02:05:18.951: %SYS-5-CONFIG_I: Configured from console by console
+R1#show in
+R1#show inter
+R1#show interfaces sta
+R1#show interfaces status
+
+R1#show interfaces status      tr
+R1#show interfaces trunk 
+
+R1#show interfaces trunk         status                      vonf
+R1#vonf    conf
+R1#configure 
+Configuring from terminal, memory, or network [terminal]? 
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#ls
+            ^
+% Invalid input detected at '^' marker.
+
+R1(config)#ls  no sh
+R1(config)#no shutdown 
+% Incomplete command.
+
+R1(config)#no shutdown             interf
+R1(config)#interface   F
+R1(config)#interface FastEthernet 0/0
+R1(config-if)#interface FastEthernet 0/0no shutdown               ls          exitls  exitno shutdown ip address 192.168.2.3 255.255.255.0nterface FastEthernet 2/0          exit                      ip address 192.168.1.3 255.255.255.0nterface FastEthernet 0/0          exit                      ip address 192.168.3.3 255.255.255.0nterface FastEthernet 1/0          p address 192.168.3.3 255.255.255.0nterface FastEthernet 1/0          p address 192.168.3.3 255.255.255.0exit                                ip address 192.168.3.3 255.255.255.0nterface FastEthernet 1/0          p address 192.168.1.0 255.255.255.0nterface FastEthernet 1/0          p address 192.168.3.3 255.255.255.0exit                                interface FastEthernet 0/0p address 192.168.1.3 255.255.255.0exit                                ip address 192.168.1.3 255.255.255.0
+R1(config-if)#no sh
+R1(config-if)#no shutdown 
+R1(config-if)#exit
+R1(config)#
+*Mar  1 02:09:23.715: %LINK-3-UPDOWN: Interface FastEthernet0/0, changed state to up
+*Mar  1 02:09:24.715: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to up
+R1(config)#ex  inter
+R1(config)#interface F
+R1(config)#interface FastEthernet 1/0
+R1(config-if)#interface FastEthernet 1/0exit                      no shutdown ip address 192.168.1.3 255.255.255.0nterface FastEthernet 0/0          no shutdown               ls          exitno shutdown ip address 192.168.2.3 255.255.255.0nterface FastEthernet 2/0          p address 192.168.2.3 255.255.255.0nterface FastEthernet 2/0          exit                      ip address 192.168.1.3 255.255.255.0nterface FastEthernet 0/0          exit                      ip address 192.168.3.3 255.255.255.0
+R1(config-if)#no sg h
+R1(config-if)#no shutdown 
+R1(config-if)#exit
+R1(config)#
+*Mar  1 02:10:12.659: %LINK-3-UPDOWN: Interface FastEthernet1/0, changed state to up
+*Mar  1 02:10:13.659: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/0, changed state to up
+R1(config)#ip  in  en  in
+R1(config)#interface Fa
+R1(config)#interface FastEthernet 2/- 0
+R1(config-if)#ip adr
+R1(config-if)#ip adrr
+R1(config-if)#ip adrr      add
+R1(config-if)#ip address 192.169 8, .9 0 2.0 3 255/ .255.255/ .0
+R1(config-if)#no shy
+R1(config-if)#no shy 
+R1(config-if)#no shutdown 
+R1(config-if)#exit
+R1(config)#exit
+R1#
+*Mar  1 02:11:15.327: %SYS-5-CONFIG_I: Configured from console by console
+R1#ww  configure show interfaces trunk status
+
+R1#show interfaces status                 ip
+% Incomplete command.
+
+R1#ip show
+    ^
+% Invalid input detected at '^' marker.
+
+R1#ip showshow ipw        sj  shpw  ow
+% Type "show ?" for a list of subcommands
+R1#show int
+R1#show interfaces 
+FastEthernet0/0 is up, line protocol is up 
+  Hardware is AmdFE, address is cc01.3e8b.0000 (bia cc01.3e8b.0000)
+  Internet address is 192.168.1.3/24
+  MTU 1500 bytes, BW 100000 Kbit/sec, DLY 100 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation ARPA, loopback not set
+  Keepalive set (10 sec)
+  Full-duplex, 100Mb/s, 100BaseTX/FX
+  ARP type: ARPA, ARP Timeout 04:00:00
+  Last input 00:00:01, output 00:00:04, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/40 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     81 packets input, 5370 bytes
+     Received 81 broadcasts, 0 runts, 0 giants, 0 throttles
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+     0 watchdog
+     0 input packets with dribble condition detected
+     22 packets output, 2765 bytes, 0 underruns
+     0 output errors, 0 collisions, 1 interface resets
+ --More--              5 unknown protocol drops
+ --More--              0 babbles, 0 late collision, 0 deferred
+ --More--              0 lost carrier, 0 no carrier
+ --More--              0 output buffer failures, 0 output buffers swapped out
+ --More--         FastEthernet1/0 is up, line protocol is up 
+ --More--           Hardware is AmdFE, address is cc01.3e8b.0010 (bia cc01.3e8b.0010)
+ --More--           Internet address is 192.168.3.3/24
+ --More--           MTU 1500 bytes, BW 100000 Kbit/sec, DLY 100 usec, 
+ --More--              reliability 255/255, txload 1/255, rxload 1/255
+ --More--           Encapsulation ARPA, loopback not set
+ --More--           Keepalive set (10 sec)
+ --More--           Full-duplex, 100Mb/s, 100BaseTX/FX
+ --More--           ARP type: ARPA, ARP Timeout 04:00:00
+ --More--           Last input never, output 00:00:09, output hang never
+ --More--           Last clearing of "show interface" counters never
+ --More--           Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+ --More--           Queueing strategy: fifo
+ --More--           Output queue: 0/40 (size/max)
+ --More--           5 minute input rate 0 bits/sec, 0 packets/sec
+ --More--           5 minute output rate 0 bits/sec, 0 packets/sec
+ --More--              0 packets input, 0 bytes
+ --More--              Received 0 broadcasts, 0 runts, 0 giants, 0 throttles
+ --More--              0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+ --More--              0 watchdog
+ --More--              0 input packets with dribble condition detected
+ --More--              19 packets output, 2308 bytes, 0 underruns
+ --More--              0 output errors, 0 collisions, 1 interface resets
+ --More--              0 unknown protocol drops
+ --More--              0 babbles, 0 late collision, 0 deferred
+ --More--              0 lost carrier, 0 no carrier
+ --More--              0 output buffer failures, 0 output buffers swapped out
+ --More--         FastEthernet2/0 is up, line protocol is up 
+ --More--           Hardware is AmdFE, address is cc01.3e8b.0020 (bia cc01.3e8b.0020)
+ --More--           Internet address is 192.168.2.3/24
+ --More--           MTU 1500 bytes, BW 100000 Kbit/sec, DLY 100 usec, 
+ --More--              reliability 255/255, txload 1/255, rxload 1/255
+ --More--           Encapsulation ARPA, loopback not set
+ --More--           Keepalive set (10 sec)
+ --More--           Full-duplex, 100Mb/s, 100BaseTX/FX
+ --More--           ARP type: ARPA, ARP Timeout 04:00:00
+ --More--           Last input 00:00:01, output 00:00:01, output hang never
+ --More--           Last clearing of "show interface" counters never
+ --More--           Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+ --More--           Queueing strategy: fifo
+ --More--           Output queue: 0/40 (size/max)
+ --More--           5 minute input rate 0 bits/sec, 0 packets/sec
+ --More--           5 minute output rate 0 bits/sec, 0 packets/sec
+ --More--              236 packets input, 15389 bytes
+ --More--              Received 236 broadcasts, 0 runts, 0 giants, 0 throttles
+ --More--              0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+ --More--              0 watchdog
+ --More--              0 input packets with dribble condition detected
+ --More--              56 packets output, 6177 bytes, 0 underruns
+ --More--              0 output errors, 0 collisions, 1 interface resets
+ --More--              14 unknown protocol drops
+ --More--              0 babbles, 0 late collision, 0 deferred
+ --More--              0 lost carrier, 0 no carrier
+ --More--              0 output buffer failures, 0 output buffers swapped out
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#co
+R1#conf
+R1#configure 
+Configuring from terminal, memory, or network [terminal]? 
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#ip route?
+route  
+
+R1(config)#ip route ?
+  A.B.C.D  Destination prefix
+  profile  Enable IP routing table profile
+  static   Allow static routes
+  vrf      Configure static route for a VPN Routing/Forwarding instance
+
+R1(config)#ip route 255/ .255.2550    5.0 ?
+  A.B.C.D  Destination prefix mask
+
+R1(config)#ip route 255.255.255.0 1255.255.255.0 9255.255.255.0 2255.255.255.0 .255.255.255.0 1255.255.255.0 6255.255.255.0 8255.255.255.0 .255.255.255.0 1255.255.255.0 .255.255.255.0 0255.255.255.0 .255.255.255.0 255.255.255.0   255.255.255.0 255.255.255.0  ?
+  A.B.C.D            Forwarding router's address
+  Async              Async interface
+  BVI                Bridge-Group Virtual Interface
+  CDMA-Ix            CDMA Ix interface
+  CTunnel            CTunnel interface
+  DHCP               Default Gateway obtained from DHCP
+  Dialer             Dialer interface
+  FastEthernet       FastEthernet IEEE 802.3
+  Lex                Lex interface
+  Loopback           Loopback interface
+  MFR                Multilink Frame Relay bundle interface
+  Multilink          Multilink-group interface
+  Null               Null interface
+  Port-channel       Ethernet Channel of interfaces
+  Tunnel             Tunnel interface
+  Vif                PGM Multicast Host interface
+  Virtual-PPP        Virtual PPP interface
+  Virtual-TokenRing  Virtual TokenRing
+
+R1(config)#ip route 192.168.1.0 255.255.255.0  1.0 255.255.255.0   3.0 255.255.255.0  .0 255.255.255.0     192, .168.2.3
+%Invalid next hop address (it's this router)
+R1(config)#ip route 192.168.3.0 255.255.255.0 192.168.2.3.3 3.3.3 2
+R1(config)#sho
+R1(config)#show    exit
+R1#sho
+*Mar  1 02:53:48.267: %SYS-5-CONFIG_I: Configured from console by console
+R1#shos w ip r
+R1#show ip ro
+R1#show ip route 
+Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+C    192.168.1.0/24 is directly connected, FastEthernet0/0
+C    192.168.2.0/24 is directly connected, FastEthernet2/0
+C    192.168.3.0/24 is directly connected, FastEthernet1/0
+R1#ping 192.168.2.3
+
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 192.168.2.3, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 1/3/4 ms
+R1#exit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R1 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+R1#
+R1#
+R1#
+R1#conf
+R1#configure 
+Configuring from terminal, memory, or network [terminal]? 
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#inte
+R1(config)#interface F
+R1(config)#interface FastEthernet 0/0
+R1(config-if)#ip hel
+R1(config-if)#ip help
+R1(config-if)#ip helper-address 192.168.3.2
+R1(config-if)#exit
+R1(config)#www   exitip helper-address 192.168.3.2nterface FastEthernet 0/0   /0 2/0
+R1(config-if)#interface FastEthernet 2/0exit                      ip helper-address 192.168.3.2
+R1(config-if)#ip helper-address 192.168.3.2nterface FastEthernet 2/0   exit                      
+R1(config)#show ip riu
+R1(config)#show ip riu  o
+R1(config)#show ip rou
+R1(config)#show ip rou           exit
+R1#show
+*Mar  1 03:12:33.407: %SYS-5-CONFIG_I: Configured from console by console
+R1#show ip riu
+R1#show ip riu  ou
+R1#show ip route 
+Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+C    192.168.1.0/24 is directly connected, FastEthernet0/0
+C    192.168.2.0/24 is directly connected, FastEthernet2/0
+C    192.168.3.0/24 is directly connected, FastEthernet1/0
+R1#
+R1#show ip route configure     show ip route               show ip route               
+R1#R1(config-if)#ip helper-address 192.168.3.2
+    ^
+% Invalid input detected at '^' marker.
+
+R1#
