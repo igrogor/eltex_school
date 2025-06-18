@@ -1,0 +1,1196 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2025.06.18 21:31:10 =~=~=~=~=~=~=~=~=~=~=~=
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+vIOS-L2-01 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+*Jun 18 16:18:29.759: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 16:18:36.022: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 16:18:37.028: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 16:19:38.471: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 16:20:00.975: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 16:20:07.058: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 16:20:08.084: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 16:20:39.927: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 16:21:10.197: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 16:21:10.269: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 16:21:17.500: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 16:21:18.445: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 16:21:41.438: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 16:22:11.926: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 16:22:16.479: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+**************************************************************************
+* IOSv - Cisco Systems Confidential                                      *
+*                                                                        *
+* This software is provided as is without warranty for internal          *
+* development and testing purposes only under the terms of the Cisco     *
+* Early Field Trial agreement.  Under no circumstances may this software *
+* be used for production purposes or deployed in a production            *
+* environment.                                                           *
+*                                                                        *
+* By using the software, you agree to abide by the terms and conditions  *
+* of the Cisco Early Field Trial Agreement as well as the terms and      *
+* conditions of the Cisco End User License Agreement at                  *
+* http://www.cisco.com/go/eula                                           *
+*                                                                        *
+* Unauthorized use or distribution of this software is expressly         *
+* Prohibited.                                                            *
+**************************************************************************
+vIOS-L2-01>enab
+vIOS-L2-01>enable 
+vIOS-L2-01#conf
+vIOS-L2-01#configure 
+Configuring from terminal, memory, or network [terminal]? 
+Enter configuration commands, one per line.  End with CNTL/Z.
+vIOS-L2-01(config)#ip ad
+vIOS-L2-01(config)#ip add
+vIOS-L2-01(config)#ip address-pool                 
+*Jun 18 16:22:42.683: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+vIOS-L2-01(config)#inter
+vIOS-L2-01(config)#interface v;
+vIOS-L2-01(config)#interface v 
+vIOS-L2-01(config)#interface 
+*Jun 18 16:23:14.205: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+vIOS-L2-01(config)#interface v
+vIOS-L2-01(config)#interface vl
+vIOS-L2-01(config)#interface vlan a 1
+*Jun 18 16:23:18.657: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+vIOS-L2-01(config)#interface vlan 1
+vIOS-L2-01(config-if)#
+*Jun 18 16:23:22.556: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to down
+vIOS-L2-01(config-if)#ipo  add
+vIOS-L2-01(config-if)#ip address 192, .168.3.1 255.255.255.240
+*Jun 18 16:23:44.295: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+vIOS-L2-01(config-if)#ip address 192.168.3.1 255.255.255.240
+vIOS-L2-01(config-if)#no sh
+vIOS-L2-01(config-if)#no shutdown 
+vIOS-L2-01(config-if)#exitr 
+vIOS-L2-01(config)#
+*Jun 18 16:24:03.298: %LINK-3-UPDOWN: Interface Vlan1, changed state to up
+*Jun 18 16:24:04.298: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to up
+vIOS-L2-01(config)#show 
+*Jun 18 16:24:16.506: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+vIOS-L2-01(config)#show ip
+                     ^
+% Invalid input detected at '^' marker.
+
+vIOS-L2-01(config)#show ip       exit
+*Jun 18 16:24:20.785: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+vIOS-L2-01(config)#exit
+vIOS-L2-01#sh
+*Jun 18 16:24:22.769: %SYS-5-CONFIG_I: Configured from console by console
+vIOS-L2-01#show ip
+% Incomplete command.
+
+vIOS-L2-01#show ip 
+vIOS-L2-01#show ip ?
+  access-lists            List IP access lists
+  accounting              The active IP accounting database
+  admission               Network Admission Control information
+  aliases                 IP alias table
+  arp                     IP ARP table
+  as-path-access-list     List AS path access lists
+  bgp                     BGP information
+  cache                   IP fast-switching route cache
+  casa                    display casa information
+  cef                     Cisco Express Forwarding
+  community-list          List community-list
+  device                  Show IP Tracking Hosts
+  dfp                     DFP information
+  dhcp                    Show items in the DHCP database
+  drp                     Director response protocol
+  eigrp                   Show IPv4 EIGRP 
+  explicit-paths          Show IP explicit paths
+  extcommunity-list       List extended-community list
+  flow                    NetFlow switching
+  host                    IP host information
+  http                    HTTP information
+  igmp                    IGMP information
+ --More--         
+vIOS-L2-01#show ip g h
+vIOS-L2-01#show ip h
+% Ambiguous command:  "show ip h"
+vIOS-L2-01#show ip hos
+vIOS-L2-01#show ip host 
+
+IP host route table - Global
+Owner:
+U - Undefined    P - Packet Snooping    D - DHCP          
+A - ARP          M - Host Mapping       I - IPe Config    
+
+Owner Address        Interface
+vIOS-L2-01#show ip host              
+*Jun 18 16:24:46.048: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+vIOS-L2-01#show ip rou
+vIOS-L2-01#show ip route 
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override
+
+Gateway of last resort is not set
+
+      192.168.3.0/24 is variably subnetted, 2 subnets, 2 masks
+C        192.168.3.0/28 is directly connected, Vlan1
+L        192.168.3.1/32 is directly connected, Vlan1
+vIOS-L2-01#show ip route          vl
+vIOS-L2-01#show vlan
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Gi0/0, Gi0/1, Gi0/2
+100  VLAN100                          active    
+200  VLAN0200                         active    
+300  VLAN0300                         active    
+1002 fddi-default                     act/unsup 
+1003 trcrf-default                    act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trbrf-default                    act/unsup 
+
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+1    enet  100001     1500  -      -      -        -    -        0      0   
+100  enet  100100     1500  -      -      -        -    -        0      0   
+200  enet  100200     1500  -      -      -        -    -        0      0   
+300  enet  100300     1500  -      -      -        -    -        0      0   
+1002 fddi  101002     1500  -      -      -        -    -        0      0   
+1003 trcrf 101003     4472  1005   3276   -        -    srb      0      0   
+1004 fdnet 101004     1500  -      -      -        ieee -        0      0   
+1005 trbrf 101005     4472  -      -      15       ibm  -        0      0   
+
+ --More--         
+vIOS-L2-01#[Aq   show vlan 1
+                     ^
+% Invalid input detected at '^' marker.
+
+vIOS-L2-01#
+*Jun 18 16:25:18.472: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+vIOS-L2-01#
+*Jun 18 16:25:22.654: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+vIOS-L2-01#
+*Jun 18 16:25:46.931: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+vIOS-L2-01#
+*Jun 18 16:26:19.660: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+vIOS-L2-01#
+*Jun 18 16:26:23.960: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+vIOS-L2-01#
+*Jun 18 16:26:48.024: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+vIOS-L2-01#
+*Jun 18 16:27:21.471: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+vIOS-L2-01#
+*Jun 18 16:27:25.842: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+vIOS-L2-01#
+*Jun 18 16:27:49.444: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+vIOS-L2-01#
+*Jun 18 16:28:23.442: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+vIOS-L2-01#
+*Jun 18 16:28:27.925: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+vIOS-L2-01#
+*Jun 18 16:28:50.772: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+vIOS-L2-01#
+*Jun 18 16:29:25.444: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+vIOS-L2-01#
+*Jun 18 16:29:29.746: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+vIOS-L2-01#
+*Jun 18 16:29:52.170: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+vIOS-L2-01#
+*Jun 18 16:30:26.020: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+vIOS-L2-01#
+*Jun 18 16:30:31.449: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+vIOS-L2-01#
+*Jun 18 16:30:53.546: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+vIOS-L2-01#
+*Jun 18 16:31:26.965: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+vIOS-L2-01#
+*Jun 18 16:31:33.207: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+vIOS-L2-01#
+*Jun 18 16:31:54.722: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+vIOS-L2-01#
+*Jun 18 16:32:28.685: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+vIOS-L2-01#
+*Jun 18 16:32:34.868: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+vIOS-L2-01#
+*Jun 18 16:32:56.115: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+vIOS-L2-01#
+*Jun 18 16:33:30.171: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+vIOS-L2-01#
+*Jun 18 16:33:36.810: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+vIOS-L2-01#
+*Jun 18 16:33:57.574: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+vIOS-L2-01#
+*Jun 18 16:34:31.869: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+vIOS-L2-01#
+*Jun 18 16:34:38.688: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+vIOS-L2-01#
+*Jun 18 16:34:58.930: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+vIOS-L2-01#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+vIOS-L2-01 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*Jun 18 16:35:33.725: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 16:35:36.667: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 16:36:00.569: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 16:36:35.444: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 16:36:37.203: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 16:37:01.960: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 16:37:37.322: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 16:37:38.113: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 16:38:03.263: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 16:38:37.596: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 16:38:39.142: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 16:39:04.422: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 16:39:38.808: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 16:39:40.993: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 16:40:05.844: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 16:40:40.361: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 16:40:42.841: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 16:41:07.446: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 16:41:41.604: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 16:41:44.421: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 16:42:08.873: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 16:42:43.146: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 16:42:46.297: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 16:43:10.391: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 16:43:44.267: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 16:43:47.961: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 16:44:11.808: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 16:44:45.387: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 16:44:49.718: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 16:45:13.201: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 16:45:46.845: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 16:45:51.596: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 16:46:14.355: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 16:46:47.871: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 16:46:53.391: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 16:47:15.786: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 16:47:48.962: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 16:47:55.144: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 16:48:17.336: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 16:48:49.968: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 16:48:56.816: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 16:49:18.688: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 16:49:50.931: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 16:49:58.119: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 16:50:20.058: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 16:50:52.117: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 16:50:59.686: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 16:51:21.418: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 16:51:53.357: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 16:52:01.422: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 16:52:22.786: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 16:52:54.686: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 16:53:03.084: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 16:53:24.210: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 16:53:55.786: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 16:54:04.874: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 16:54:25.571: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 16:54:57.301: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 16:55:06.477: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 16:55:26.933: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 16:55:58.141: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 16:56:07.813: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 16:56:28.419: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 16:56:59.210: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 16:57:09.416: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 16:57:29.809: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 16:58:00.385: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 16:58:10.994: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 16:58:31.266: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 16:59:01.574: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 16:59:12.664: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 16:59:32.384: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:00:02.539: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:00:14.355: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:00:33.810: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:01:03.839: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:01:16.057: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:01:35.173: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:02:04.963: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:02:17.436: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:02:36.600: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:03:06.271: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:03:19.113: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:03:38.143: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:04:07.325: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:04:20.779: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:04:39.505: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:05:08.560: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:05:22.383: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:05:40.838: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:06:09.723: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:06:24.086: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:06:42.295: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:07:11.232: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:07:25.872: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:07:43.543: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:08:12.294: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:08:27.199: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:08:44.990: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:09:13.508: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:09:28.932: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:09:46.387: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:10:14.662: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:10:30.602: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:10:48.114: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:11:15.598: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:11:32.265: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:11:49.783: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:12:16.813: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:12:33.868: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:12:51.295: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:13:18.024: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:13:35.479: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:13:52.781: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:14:19.236: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:14:37.200: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:14:54.384: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:15:20.505: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:15:38.934: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:15:55.749: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:16:21.604: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:16:40.656: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:16:57.480: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:17:22.937: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:17:42.357: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:17:59.205: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:18:24.240: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:18:44.043: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:19:00.938: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:19:25.508: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:19:45.749: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:20:02.632: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:20:26.478: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:20:47.388: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:21:04.301: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:21:27.688: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:21:49.204: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:22:05.936: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:22:29.057: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:22:50.844: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:23:07.386: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:23:30.206: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:23:52.570: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:24:09.083: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:24:31.331: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:24:54.268: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:25:10.811: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:25:32.596: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:25:55.996: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:26:12.446: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:26:33.906: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:26:57.780: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:27:13.998: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:27:35.117: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:27:59.513: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:28:15.529: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:28:35.995: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:29:01.053: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:29:17.178: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:29:37.184: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:30:02.663: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:30:18.755: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:30:38.297: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:31:04.444: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:31:20.391: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:31:39.515: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:32:06.143: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:32:21.992: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:32:40.670: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:33:07.726: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:33:23.479: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:33:41.724: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:34:09.088: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:34:22.905: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:34:42.695: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:35:10.690: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:35:23.691: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:35:43.931: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:36:12.359: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:36:23.358: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:36:45.067: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:37:13.903: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:37:17.107: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:37:46.119: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:38:15.492: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:38:17.097: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:38:47.004: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:39:16.932: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:39:17.095: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:39:48.000: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:40:17.089: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:40:18.419: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:40:48.720: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:41:17.091: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:41:19.719: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:41:49.604: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:42:17.127: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:42:21.308: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:42:50.545: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:43:17.120: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:43:22.797: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:43:51.609: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:44:17.119: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:44:24.327: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:44:52.635: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:45:17.126: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:45:25.931: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:45:53.756: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:46:17.128: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:46:26.518: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:46:54.876: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:47:17.135: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:47:25.804: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:47:56.024: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:48:17.126: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:48:25.810: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:48:56.753: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:49:17.135: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:49:25.815: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:49:56.305: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:50:17.132: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:50:25.818: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:50:56.310: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:51:17.130: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:51:25.813: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:51:56.306: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:52:17.142: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:52:25.811: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:52:56.314: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:53:17.144: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:53:25.813: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:53:56.312: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:54:17.146: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:54:25.812: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:54:56.313: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:55:17.164: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:55:25.811: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:55:56.306: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:56:17.177: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:56:25.847: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:56:56.309: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:57:17.167: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:57:25.840: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:57:56.302: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:58:17.174: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:58:25.848: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:58:56.312: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 17:59:17.173: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 17:59:25.841: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 17:59:56.312: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:00:17.169: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:00:25.842: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:00:56.321: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:01:17.175: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:01:25.844: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:01:56.339: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:02:17.179: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:02:25.848: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:02:56.337: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:03:17.175: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:03:25.844: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:03:56.331: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:04:17.178: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:04:25.878: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:04:56.340: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:05:17.177: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:05:25.873: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:05:56.335: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:06:17.169: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:06:25.876: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:06:56.342: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:07:17.204: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:07:25.873: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:07:56.344: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:08:17.176: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:08:25.878: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:08:56.347: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:09:17.209: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:09:25.878: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:09:56.336: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:10:17.173: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:10:25.874: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:10:56.367: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:11:17.171: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:11:25.872: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:11:56.361: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:12:17.174: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:12:25.872: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:12:56.361: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:13:17.212: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:13:25.905: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:13:56.372: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:14:17.193: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:14:25.909: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:14:56.365: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:15:17.206: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:15:25.906: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:15:56.367: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:16:17.209: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:16:25.906: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:16:56.371: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:17:17.218: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:17:25.902: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:17:56.396: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:18:17.231: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:18:25.903: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:18:56.397: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:19:17.218: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:19:25.899: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:19:56.395: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:20:17.240: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:20:25.943: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:20:56.398: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:21:17.238: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:21:25.935: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:21:56.400: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:22:17.259: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:22:25.939: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:22:56.403: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:23:17.261: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:23:25.935: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:23:56.395: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:24:17.267: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:24:25.938: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:24:56.396: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:25:17.258: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:25:25.932: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:25:56.429: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:26:17.252: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:26:25.960: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:26:56.431: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:27:17.258: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:27:25.961: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:27:56.427: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:28:17.257: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:28:25.967: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:28:56.427: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:29:17.288: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:29:25.966: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:29:56.434: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:30:17.267: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:30:25.963: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:30:56.426: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:31:17.281: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:31:25.962: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:31:56.428: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:32:17.285: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:32:25.961: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:32:56.440: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:33:17.285: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:33:25.966: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:33:56.455: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:34:17.293: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:34:25.996: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:34:56.459: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:35:17.291: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:35:25.995: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:35:56.458: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:36:17.311: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:36:25.994: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:36:56.460: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:37:17.312: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:37:25.997: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:37:56.491: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:38:17.318: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:38:26.000: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:38:56.498: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:39:17.318: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:39:26.023: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:39:56.488: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:40:17.348: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:40:26.021: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:40:56.489: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:41:17.323: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:41:26.029: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:41:56.481: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:42:17.344: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:42:26.027: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:42:56.490: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:43:17.353: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:43:26.023: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:43:56.509: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:44:17.344: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:44:26.022: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:44:56.485: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:45:17.347: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:45:26.057: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:45:56.491: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:46:17.344: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:46:26.053: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:46:56.521: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:47:17.346: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:47:26.060: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:47:56.521: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:48:17.354: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:48:26.060: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:48:56.524: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:49:17.374: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:49:26.057: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:49:56.522: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:50:17.383: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:50:26.059: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:50:56.516: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:51:17.382: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:51:26.093: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:51:56.553: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:52:17.382: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:52:26.087: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:52:56.559: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:53:17.401: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:53:26.084: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:53:56.550: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:54:17.419: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:54:26.090: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:54:56.556: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:55:17.409: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:55:26.084: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:55:56.551: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:56:17.416: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:56:26.084: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:56:56.553: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:57:17.405: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:57:26.114: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:57:56.586: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:58:17.416: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:58:26.122: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:58:56.585: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 18:59:17.441: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 18:59:26.120: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 18:59:56.585: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:00:17.440: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:00:26.117: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:00:56.587: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:01:17.418: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:01:26.121: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:01:56.586: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:02:17.440: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:02:26.123: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:02:56.588: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:03:17.443: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:03:26.115: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:03:56.588: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:04:17.447: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:04:26.155: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:04:56.610: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:05:17.439: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:05:26.148: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:05:56.613: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:06:17.470: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:06:26.154: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:06:56.612: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:07:17.443: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:07:26.154: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:07:56.610: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:08:17.476: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:08:26.151: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:08:56.606: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:09:17.472: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:09:26.146: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:09:56.613: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:10:17.476: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:10:26.151: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:10:56.612: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:11:17.476: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:11:26.150: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:11:56.607: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:12:17.465: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:12:26.144: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:12:56.615: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:13:17.476: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:13:26.187: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:13:56.641: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:14:17.472: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:14:26.184: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:14:56.617: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:15:17.469: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:15:26.174: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:15:56.650: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:16:17.499: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:16:26.176: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:16:56.649: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:17:17.497: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:17:26.175: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:17:56.648: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:18:17.500: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:18:26.180: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:18:56.640: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:19:17.505: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:19:26.180: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:19:56.643: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:20:17.532: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:20:26.209: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:20:56.670: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:21:17.502: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:21:26.207: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:21:56.672: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:22:17.523: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:22:26.206: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:22:56.671: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:23:17.525: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:23:26.210: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:23:56.677: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:24:17.541: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:24:26.207: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:24:56.678: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:25:17.530: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:25:26.204: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:25:56.667: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:26:17.539: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:26:26.238: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:26:56.676: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:27:17.532: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:27:26.245: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:27:56.677: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:28:17.532: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:28:26.237: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:28:56.706: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:29:17.544: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:29:26.238: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:29:56.718: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:30:17.564: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:30:26.245: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:30:56.706: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:31:17.572: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:31:26.272: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:31:56.715: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:32:17.567: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:32:26.274: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:32:56.711: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:33:17.572: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:33:26.268: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:33:56.732: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:34:17.562: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:34:26.271: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:34:56.710: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:35:17.567: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:35:26.273: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:35:56.713: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:36:17.562: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:36:26.275: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:36:56.722: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:37:17.567: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:37:26.274: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:37:56.736: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:38:17.595: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:38:26.305: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:38:56.736: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:39:17.591: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:39:26.304: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:39:56.728: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:40:17.605: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:40:26.302: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:40:56.737: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:41:17.599: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:41:26.305: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:41:56.757: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:42:17.587: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:42:26.307: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:42:56.764: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:43:17.593: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:43:26.308: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:43:56.769: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:44:17.600: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:44:26.306: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:44:56.762: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:45:17.593: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:45:26.306: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:45:56.765: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:46:17.601: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:46:26.333: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:46:56.767: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:47:17.623: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:47:26.329: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:47:56.768: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:48:17.633: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:48:26.335: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:48:56.792: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:49:17.636: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:49:26.334: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:49:56.766: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:50:17.628: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:50:26.329: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:50:56.794: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:51:17.619: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:51:26.332: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:51:56.806: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:52:17.625: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:52:26.332: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:52:56.787: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:53:17.629: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:53:26.331: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:53:56.801: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:54:17.667: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:54:26.363: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:54:56.822: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:55:17.643: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:55:26.362: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:55:56.805: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:56:17.654: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:56:26.362: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:56:56.836: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:57:17.660: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:57:26.363: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:57:56.826: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:58:17.652: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:58:26.361: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:58:56.823: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 19:59:17.666: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 19:59:26.357: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 19:59:56.828: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:00:17.650: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:00:26.360: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:00:56.827: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:01:17.665: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:01:26.365: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:01:56.820: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:02:17.654: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:02:26.358: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:02:56.831: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:03:17.661: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:03:26.397: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:03:56.823: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:04:17.687: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:04:26.396: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:04:56.862: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:05:17.680: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:05:26.389: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:05:56.859: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:06:17.687: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:06:26.397: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:06:56.849: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:07:17.687: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:07:26.394: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:07:56.851: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:08:17.688: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:08:26.390: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:08:56.868: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:09:17.719: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:09:26.424: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:09:56.865: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:10:17.724: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:10:26.426: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:10:56.878: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:11:17.726: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:11:26.422: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:11:56.888: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:12:17.724: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:12:26.426: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:12:56.884: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:13:17.719: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:13:26.427: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:13:56.888: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:14:17.751: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:14:26.418: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:14:56.897: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:15:17.753: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:15:26.451: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:15:56.909: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:16:17.763: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:16:26.451: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:16:56.919: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:17:17.762: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:17:26.456: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:17:56.919: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:18:17.760: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:18:26.456: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:18:56.911: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:19:17.757: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:19:26.455: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:19:56.920: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:20:17.756: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:20:26.453: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:20:56.922: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:21:17.787: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:21:26.456: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:21:56.920: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:22:17.787: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:22:26.486: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:22:56.946: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:23:17.787: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:23:26.481: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:23:56.943: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:24:17.786: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:24:26.486: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:24:56.944: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:25:17.790: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:25:26.481: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:25:56.944: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:26:17.795: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:26:26.485: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:26:56.952: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:27:17.788: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:27:26.479: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:27:56.948: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:28:17.799: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:28:26.487: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:28:56.948: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:29:17.799: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:29:26.485: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:29:56.948: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:30:17.819: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:30:26.484: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:30:56.981: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:31:17.817: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:31:26.513: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:31:56.981: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:32:17.824: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:32:26.511: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:32:56.979: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:33:17.821: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:33:26.520: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:33:56.979: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:34:17.821: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:34:26.520: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:34:56.977: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:35:17.828: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:35:26.516: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:35:56.979: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:36:17.825: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:36:26.522: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:36:56.982: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:37:17.852: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:37:26.542: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:37:57.014: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:38:17.847: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:38:26.555: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:38:57.011: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:39:17.844: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:39:26.574: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:39:57.016: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:40:17.851: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:40:26.604: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:40:57.006: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:41:17.855: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:41:26.614: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:41:57.014: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:42:17.881: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:42:26.605: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:42:57.014: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:43:17.877: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:43:26.606: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:43:57.033: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:44:17.877: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:44:26.612: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:44:57.041: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:45:17.885: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:45:26.640: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:45:57.038: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:46:17.881: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:46:26.635: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:46:57.045: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:47:17.884: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:47:26.665: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:47:57.038: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:48:17.885: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:48:26.670: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:48:57.041: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:49:17.899: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:49:26.697: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:49:57.070: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:50:17.919: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:50:26.695: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:50:57.064: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:51:17.913: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:51:26.701: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:51:57.069: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:52:17.913: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:52:26.727: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:52:57.077: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:53:17.911: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:53:26.733: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:53:57.055: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:54:17.914: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:54:26.761: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:54:57.072: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:55:17.912: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:55:26.756: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:55:57.075: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:56:17.911: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:56:26.789: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:56:57.075: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:57:17.915: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:57:26.790: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:57:57.073: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:58:17.933: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:58:26.822: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:58:57.068: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 20:59:17.945: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 20:59:26.825: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 20:59:57.100: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 21:00:17.941: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 21:00:26.849: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 21:00:57.092: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 21:01:17.951: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 21:01:26.848: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 21:01:57.100: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 21:02:17.941: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 21:02:26.851: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 21:02:57.095: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 21:03:17.938: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 21:03:26.848: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 21:03:57.095: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 21:04:17.979: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 21:04:26.867: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 21:04:57.127: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 21:05:17.972: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 21:05:26.885: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 21:05:57.133: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 21:06:17.972: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 21:06:26.886: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 21:06:57.131: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 21:07:17.970: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 21:07:26.913: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 21:07:57.133: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 21:08:17.974: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 21:08:26.912: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 21:08:57.129: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 21:09:17.970: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 21:09:26.942: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 21:09:57.129: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 21:10:17.968: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 21:10:26.949: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 21:10:57.129: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 21:11:17.968: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 21:11:26.936: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 21:11:57.134: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 21:12:18.001: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 21:12:26.971: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 21:12:57.135: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 21:13:17.996: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 21:13:26.975: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 21:13:57.133: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 21:14:17.975: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 21:14:27.004: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 21:14:57.164: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 21:15:18.008: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 21:15:27.002: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 21:15:57.164: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).
+*Jun 18 21:16:18.005: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not full duplex), with R1 FastEthernet1/0 (full duplex).
+*Jun 18 21:16:27.032: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not full duplex), with R2 FastEthernet0/0 (full duplex).
+*Jun 18 21:16:57.164: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/2 (not full duplex), with R3 FastEthernet0/0 (full duplex).

@@ -1,0 +1,11 @@
+
+PC1> show ip
+
+NAME        : PC1[1]
+IP/MASK     : 10.0.0.1/24
+GATEWAY     : 10.0.0.254
+DNS         :
+MAC         : 00:50:79:66:68:00
+LPORT       : 21192
+RHOST:PORT  : 127.0.0.1:21193
+MTU         : 1500

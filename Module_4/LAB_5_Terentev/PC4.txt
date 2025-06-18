@@ -1,0 +1,11 @@
+
+PC4> show ip
+
+NAME        : PC4[1]
+IP/MASK     : 10.0.3.1/24
+GATEWAY     : 10.0.3.254
+DNS         :
+MAC         : 00:50:79:66:68:03
+LPORT       : 21198
+RHOST:PORT  : 127.0.0.1:21199
+MTU         : 1500

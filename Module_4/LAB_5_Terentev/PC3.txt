@@ -1,0 +1,11 @@
+
+PC3> show ip
+
+NAME        : PC3[1]
+IP/MASK     : 10.0.2.1/24
+GATEWAY     : 10.0.2.254
+DNS         :
+MAC         : 00:50:79:66:68:02
+LPORT       : 21196
+RHOST:PORT  : 127.0.0.1:21197
+MTU         : 1500
